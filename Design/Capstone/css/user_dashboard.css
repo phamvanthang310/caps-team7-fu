@@ -1,0 +1,49 @@
+body{
+	background-color: rgba(130, 225, 247, 0.34);
+}
+.dash_board_logo{
+	background-color: #fff;
+}
+.main_wrap{
+	width: 1000px;
+}
+
+.dash_board_logo{
+	padding: 40px;
+	font-size: 40px;
+}
+.db_menu_item{	
+	margin: 0 13px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+}
+.main_menu_wrap .row {
+	background-image: linear-gradient(to bottom, #278be1,#2181d8);
+}
+.main_menu_wrap .active{
+	background-color: rgba(24, 24, 26, 0.47);
+}
+.main_content_wrap{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F0F0F0;
+}
+.add_site{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 15px;
+	padding: 10px 45px;
+}
+.table_wrap{
+	margin-top: 20px;
+}
+.rotate{
+	transform: rotate(-90deg);
+	position: absolute;
+	color: #ABABAB;
+}

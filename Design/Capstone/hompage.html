@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Capstone Project</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/home_page.js"></script>
+
+
+
+</head>	
+<body>
+	<div class="intro_page_wrap">
+		<div class="home_logo">Capstone
+		</div>
+		<div class="home_menu">
+			<a class="toggle_menu" href="javascript:;"><i class="fa fa-bars"></i>Menu </a>
+			<div class="hidden_menu">
+				<div class="menu_item">Menu 1</div>
+				<div class="menu_item">Menu 2</div>
+				<div class="menu_item">Menu 3</div>
+				<div class="menu_item">Menu 4</div>
+				<div class="menu_item">Menu 5</div>
+			</div>
+		</div>
+		<!-- Modal Log in -->
+		<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button> -->
+		<div class="home_login" data-toggle="modal" data-target="#registerModal">Log in
+		</div>
+		
+		<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Log in</h4>
+			  </div>
+			  <div class="modal-body">
+				<div>
+					<label>Your Email: </label><input type="text" placeholder="Email" />
+				</div>
+				<div>
+					<label>Your Password: </label><input type="password" placeholder="Password" />
+				</div>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Log in</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		
+		<!-- End modal -->
+		<div class="container-fluid register_wrap">
+			<div class="row">
+				<div class="col-xs-6 intro_text">
+					<h1>Your idea needs a great website</h1><br/>
+					It's surprisingly easy to create a unique website, blog or online store
+				</div>
+				<div class="col-xs-6 register_form">
+					<div class="register_form">
+						<div class="register_title">Sign up free</div>
+						<input type="text" placeholder="Full name" />
+						<input type="text" placeholder="Email" />
+						<input type="password" placeholder="Password" />
+						<button type="submit" id="sign_up" class="btn btn-primary register" >Get started </button>
+					</div>
+				</div>
+			  
+			</div>
+		</div>
+	</div>
+	
+	<div class="best_theme_wrap">
+		<div class="theme_label">
+			Powerful Features <br/>
+			<label>Choose your theme</label>
+		</div>
+		<div class="item_wrap">
+			
+				<div class="container-fluid theme_list">
+					<div class="row">
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/1.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/2.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/3.jpg" alt="...">
+							</a>
+						</div>
+					  
+					</div>
+					<div class="row">
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/3.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/1.jpg" alt="...">
+							</a>
+						</div>
+						<div class="col-xs-4 theme">
+							<a href="#" class="thumbnail">
+							  <img src="images/2.jpg" alt="...">
+							</a>
+						</div>
+					  
+					</div>
+				</div>
+		
+		</div>
+	</div>
+	
+</body>
+</html>
