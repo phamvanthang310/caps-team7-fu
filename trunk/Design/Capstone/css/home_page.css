@@ -1,0 +1,115 @@
+.home_logo{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 15px;
+}
+.intro_page_wrap{
+	background-image:url('../images/SushiChef-Bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.home_menu a {
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	background: rgba(5, 5, 5, 0.33);
+}
+.home_menu a:hover {
+	text-decoration: none;
+}
+.home_menu .fa-bars{
+	margin-right: 10px;
+}
+.home_menu{
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	padding-left: 40px;
+	padding-top: 40px;
+	height: 100%;
+}
+.hidden_menu{
+	color: #fff;
+	display: none;
+	width: 160px;
+	margin-top: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.menu_item{
+	text-indent: 15px;
+	padding: 25px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+	border-top: 1px solid rgba(146, 146, 146, 0.28);
+}
+.home_login{
+	position: fixed;	
+	font-size: 17px;	
+	right: 40px;
+	top: 40px;
+	color: #fff;
+	z-index: 99;
+	cursor: pointer;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.register_wrap{	
+	position: absolute;	
+	height: 380px;
+	width: 900px;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.intro_text{
+	color: #fff;
+	font-size: 25px;
+}
+.intro_text h1 {
+	font-size: 45px;
+}
+.register_form{
+	padding: 23px;
+	background: #fff;
+	text-align: center;
+	font-size: 25px;	
+}
+.register_form > input{
+	width: 100%;
+	margin: 10px 0;
+	font-size: 15px;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.register{
+	width: 70%;
+	padding: 15px;
+	margin-top: 10px;
+	border-radius: 30px;
+}
+.modal-body  input{
+	width: 50%;
+	margin: 10px 0;
+	font-size: 15px;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.modal-body  label{
+	width: 200px;
+}
+.theme_label{
+	text-align: center;
+	padding: 20px;
+	font-size: 40px;
+}
+.theme_label label{
+	font-size: 20px;
+}
+.theme_list{
+	width: 1000px;
+}
