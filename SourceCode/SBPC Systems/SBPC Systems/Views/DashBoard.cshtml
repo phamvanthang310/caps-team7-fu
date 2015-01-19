@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/dashboard.js"></script>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <link href="~/Css/dashboard.css" rel="stylesheet" />
+    @RenderSection("scripts", required: false)
+</head>
+<body>
+    @RenderBody()
+    <div class="tabs">
+        <ul id="tabs">
+            <li><a href="#" name="tab1">Danh sách website</a></li>
+            <li><a href="#" name="tab2">Dung lượng lưu trữ</a></li>
+            <li><a href="#" name="tab3">Thông tin tài khoản</a></li>
+            <li><a href="#" name="tab4">Thống kê</a></li>
+        </ul>
+
+        <div id="content">
+            <!-- WebsiteList tab -->
+            @Html.Partial("./DashBoard/_WebsiteListTab")
+            <!--End-->
+            <!-- Storage tab -->
+            @Html.Partial("./DashBoard/_StorageTab")
+            <!--End-->
+            <!-- Account info -->
+            @Html.Partial("./DashBoard/_AccountInfoTab")
+            <!--End-->
+            <!-- Statistics tab-->
+            @Html.Partial("./DashBoard/_StatisticsTab")
+            <!--End-->
+
+
+
+        </div>
+    </div>
+</body>
+</html>
+
+
