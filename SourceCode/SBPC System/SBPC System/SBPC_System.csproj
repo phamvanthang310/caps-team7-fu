@@ -178,6 +178,9 @@
     <Content Include="Assets\img\favicon.ico" />
     <Content Include="Assets\img\flag_icons\flag-sm.png" />
     <Content Include="Assets\img\flag_icons\flag-xs.png" />
+    <Content Include="Assets\img\homepage\flat-design-examples-logo-13.png" />
+    <Content Include="Assets\img\homepage\Picture1.png" />
+    <Content Include="Assets\img\homepage\SushiChef-Bg.jpg" />
     <Content Include="Assets\img\logos\logo.png" />
     <Content Include="Assets\img\logos\logo_grey.png" />
     <Content Include="Assets\img\logos\logo_white.png" />
@@ -465,7 +468,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Vendor\plugins\slick\fonts\slick.eot" />
     <Content Include="Vendor\plugins\slick\fonts\slick.ttf" />
     <Content Include="Vendor\plugins\slick\fonts\slick.woff" />

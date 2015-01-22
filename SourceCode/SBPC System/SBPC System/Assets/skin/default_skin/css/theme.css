@@ -18461,7 +18461,7 @@ body.onload-check #topbar {
 ================================================= */
 /* If header is fixed modify primary containers padding */
 .navbar.navbar-fixed-top + #sidebar_left + #content_wrapper {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 /* Fixed Sidebar */
 #sidebar_left.affix {
@@ -19589,7 +19589,7 @@ li.dropdown-border-hover:hover,
   color: #fff;
 }
 .navbar.bg-primary {
-  background-color: #4A89DC !important;
+  background-color: #4a89dc !important;
   color: #f5f8fd;
 }
 .navbar.bg-primary.navbar .nav > li.open > a,
@@ -19765,21 +19765,21 @@ li.dropdown-border-hover:hover,
   border-bottom-color: #3b3f4f;
 }
 .navbar.bg-light {
-  color: #F5F8FD;
-  background-color: #4A89DC !important;
+  color: #666;
+  background-color: #FFF !important;
   border-bottom: 1px solid #E2E2E2;
 }
 .navbar.bg-light .navbar-branding {
-  background-color: #4A89DC !important;
+  background-color: #FFF !important;
   border-bottom: 1px solid #E6E6E6;
 }
 .navbar.bg-light .navbar-form.navbar-search input {
-  border-color: #fff;
+  border-color: #eee;
 }
 .navbar.bg-light .navbar-brand,
 .navbar.bg-light .nav > li > a,
 .navbar.bg-light .nav > li.open > a {
-  color: #fff;
+  color: #666;
 }
 .navbar.bg-light #toggle_sidemenu_l,
 .navbar.bg-light #toggle_sidemenu_l:hover,
