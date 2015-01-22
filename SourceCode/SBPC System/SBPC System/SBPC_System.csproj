@@ -470,6 +470,9 @@
     <Content Include="Vendor\plugins\slick\fonts\slick.ttf" />
     <Content Include="Vendor\plugins\slick\fonts\slick.woff" />
     <Content Include="Vendor\plugins\slick\fonts\slickd41d.eot" />
+    <Content Include="Views\Shared\BuilderPage.cshtml" />
+    <Content Include="Views\Shared\BuiderPage\_LeftMenu.cshtml" />
+    <Content Include="Views\Shared\BuiderPage\_RightMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
