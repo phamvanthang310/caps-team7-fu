@@ -476,9 +476,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\BuilderPage\BuilderPage.cshtml" />
-    <Content Include="Views\Shared\Builder\_LeftMenu.cshtml" />
     <Content Include="Views\Shared\Builder\_RightMenu.cshtml" />
-    <Content Include="Views\Shared\Builder\_BuilderPageLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
