@@ -473,6 +473,7 @@
     <Content Include="Vendor\plugins\slick\fonts\slickd41d.eot" />
     <Content Include="Views\Shared\Home\_HomeLayout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

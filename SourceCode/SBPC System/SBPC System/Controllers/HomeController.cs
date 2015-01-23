@@ -15,12 +15,19 @@ namespace SBPC_System.Controllers
         {
             return View();
         }
-        //
-        // GET: /Demo1/
-
-        public ActionResult demo1()
+        public ActionResult Login()
         {
             return View();
         }
+        [HttpPost]
+        public ActionResult Login(string txtUsername, string txtPassword)
+        {
+            if (txtUsername == "admin" && txtPassword == "admin")
+            {
+                return View();
+            }
+            return Redirect("Index");
+        }
+
     }
 }
