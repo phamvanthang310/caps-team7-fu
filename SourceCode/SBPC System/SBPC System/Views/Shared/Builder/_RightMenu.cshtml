@@ -1,229 +1,169 @@
-﻿<aside class="tray tray-right tray290 va-t pn" data-tray-height="match">
+﻿<style>
+    .builder-element-container {
+        background: none repeat scroll 0% 0% #F2F2F2;
+        border-left: 1px solid #DDD;
+        border-right: 0px none;
+        position:fixed;
+    }
 
-    <div class="affix-pane" data-spy="affix" data-offset-top="200" style="overflow-y:scroll; overflow:scroll;overflow-x:hidden; height:500px;">
-        <div class="animated-long" data-animate="[" 1000","fadein"]">
-            <div id="skin-switcher" class="row tray-bin alt-btns-hover br-b-n br-h-n mn">
+    .builder-element-pick {
+        padding: 11px 15px 11px 20px;
+        background: none repeat scroll 0% 0% #FBFBFB;
+        position: relative;
+    }
+
+    .holder-style:hover {
+        background-color: white;
+        outline-color: #70CA63;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+    }
+</style>
+
+
+<aside class=" pull-right" style="width: 25%">
+    <div class="row">
+        <div id="" class="builder-element-container scroll">
+            <div class=" builder-element-pick">
+                Basic
+            </div>
+            <div class="row mr10 ml10 mt20  text-center">
                 <div class="col-md-6">
-
-                    <a class="holder-style p15 mb20 holder" href="#modal-image">
+                    <a class="holder-style p15 mb20" href="#modal-image">
                         <span class="fa fa-picture-o fs40 holder-icon"></span>
-                        <br></br>
-                        Image
+                        <br> Image
                     </a>
                 </div>
                 <div class="col-md-6">
-
                     <a class="holder-style p15 mb20" href="#modal-text">
-                        <span class="fa fa-text-height fs40 holder-icon">
-                        </span>
-                        <br></br>
-
-                        Text
+                        <span class="fa fa-text-height fs40 holder-icon"></span>
+                        <br> Title
                     </a>
                 </div>
                 <div class="col-md-6">
-
+                    <a class="holder-style p15 mb20" href="#modal-form">
+                        <span class="glyphicons glyphicons-align_left fs40 holder-icon"></span>
+                        <br> Text
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-panel">
+                        <span class="glyphicons glyphicons-google_maps fs40 holder-icon"></span>
+                        <br> Map
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <a class="holder-style p10 mb20" href="#modal-video" style="line-height: 14px">
+                        <span class="fa fa-list-alt fs40 holder-icon"></span>
+                        <br /> Contact Form
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                        <span class="glyphicons glyphicons-magic fs40 holder-icon"></span>
+                        <br> Slide Show
+                    </a>
+                </div>
+            </div>
+            <div class=" builder-element-pick">
+                Structure
+            </div>
+            <div class="row mr10 ml10 mt20 text-center">
+                <div class="col-md-6">
                     <a class="holder-style p15 mb20" href="#modal-image">
+                        <span class="glyphicons glyphicons-vector_path_square fs40 holder-icon"></span>
+                        <br> Spacer
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-text">
+                        <span class="glyphicons glyphicons-vector_path_line  fs40 holder-icon"></span>
+                        <br> Divider
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-form">
+                        <span class="glyphicons glyphicons-macbook fs40 holder-icon"></span>
+                        <br> Button
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-panel">
+                        <span class="glyphicons glyphicons-search fs40 holder-icon"></span>
+                        <br> Search Box
+                    </a>
+                </div>
+
+            </div>
+            <div class=" builder-element-pick">
+                Products
+            </div>
+            <div class="row mr10 ml10 mt20 text-center">
+
+                <div class="col-md-6 ">
+                    <a class="holder-style p15 mb20" href="#modal-video">
+                        <span class="glyphicons glyphicons-show_thumbnails fs40 holder-icon"></span>
+                        <br> Grib View
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                        <span class="glyphicons glyphicons-show_thumbnails_with_lines fs40 holder-icon"></span>
+                        <br> List View
+                    </a>
+                </div>
+
+            </div>
+            <div class=" builder-element-pick">
+                Media
+            </div>
+            <div class="row mr10 ml10 mt20 text-center">
+                <div class="col-md-6">
+                    <a class="holder-style p15  mb20" href="#modal-image">
+                        <span class="fa fa-picture-o fs40 holder-icon"></span>
+                        <br> Image
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-text">
+                        <span class="fa fa-text-height fs40 holder-icon"></span>
+                        <br> Text
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="holder-style p15 mb20" href="#modal-form">
                         <span class="fa fa-pencil-square-o fs40 holder-icon"></span>
-                        <br></br>
-                        Form
+                        <br> Form
                     </a>
                 </div>
                 <div class="col-md-6">
-
-                    <a class="holder-style p15 mb20" href="#modal-image">
+                    <a class="holder-style p15 mb20" href="#modal-panel">
                         <span class="fa fa-map-marker fs40 holder-icon"></span>
-                        <br></br>
-                        Panel
+                        <br> Panel
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <a class="holder-style p15 mb20" href="#modal-video">
+                        <span class="fa fa-film fs40 holder-icon"></span>
+                        <br> Video
+                    </a>
+                </div>
+                <div class="col-md-6 ">
+                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                        <span class="fa fa-spinner fs40 holder-icon"></span>
+                        <br> Ajax
                     </a>
                 </div>
             </div>
         </div>
-        <div id="nav-spy">
-            <ul class="nav tray-nav custom-nav-animation">
-                <li class="animated animated-short zoomIn active">
-                    <a href="#spy1">Basic</a>
 
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy2">
-
-                        <span class="fa fa-upload fa-3x"></span>
-
-                        File Uploaders
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy3">
-
-                        <span class="fa fa-caret-square-o-right fa-lg fa-3x"></span>
-
-                        Form Input Addons
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy4">
-
-                        <span class="fa fa-check-square-o fa-lg fa-3x"></span>
-
-                        Radios & Checkboxes
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy5">
-
-                        <span class="fa fa-toggle-off fa-lg fa-3x"></span>
-
-                        Input Switches
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy6">
-
-                        <span class="fa fa-star-o fa-lg fa-3x"></span>
-
-                        Review & Rating Widgets
-
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="nav tray-nav custom-nav-animation">
-                <li class="animated animated-short zoomIn active">
-                    <a href="#spy1">Structure</a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy2">
-
-                        <span class="fa fa-minus fa-3x"></span>
-
-                        Divider
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy3">
-
-                        <span class="fa fa-caret-square-o-right fa-lg fa-3x"></span>
-
-                        Spacer
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy4">
-
-                        <span class="fa fa-square-o fa-3x"></span>
-
-                        Button
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy5">
-
-                        <span class="fa fa-search fa-3x"></span>
-
-                        Search box
-
-                    </a>
-
-                </li>
-            </ul>
-
-            <ul class="nav tray-nav custom-nav-animation">
-                <li class="animated animated-short zoomIn active">
-                    <a href="#spy1">Media</a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy2">
-
-                        <span class="fa fa-file-video-o fa-3x"></span>
-
-                        Video
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy3">
-
-                        <span class="fa fa-file-audio-o fa-3x"></span>
-
-                        Audio
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy4">
-
-                        <span class="fa fa-file-word-o fa-3x"></span>
-
-                        Document
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy5">
-
-                        <span class="fa fa-youtube-play fa-3x"></span>
-
-                        Youtube
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy5">
-
-                        <span class="fa fa-facebook fa-3x"></span>
-
-                        Flash
-
-                    </a>
-
-                </li>
-                <li class="animated animated-short zoomIn">
-
-                    <a href="#spy5">
-
-                        <span class="fa fa-file fa-3x"></span>
-
-                        File
-
-                    </a>
-
-                </li>
-            </ul>
-        </div>
     </div>
 </aside>
