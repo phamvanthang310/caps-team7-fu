@@ -2,6 +2,35 @@
     ViewBag.Title = "Builder";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    .builder-element-container {
+        background: none repeat scroll 0% 0% #F2F2F2;
+        border-left: 1px solid #DDD;
+        border-right: 0px none;
+        position: fixed;
+    }
+
+    .builder-element-pick {
+        padding: 11px 15px 11px 20px;
+        background: none repeat scroll 0% 0% #FBFBFB;
+        position: relative;
+    }
+
+    .holder-style:hover {
+        background-color: white;
+        outline-color: #70CA63;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .scroll {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+    }
+</style>
 <!-- Start: Topbar -->
 <header id="topbar" class="">
     <div class="topbar-left">
@@ -22,6 +51,143 @@
     </div>
 </header>
 <!-- End: Topbar -->
+<section id="content" class="table-layout">
 
-@Html.Partial("~/Views/Shared/Builder/_RightMenu.cshtml")
-<!-- end: .tray-right -->
+    <aside class=" pull-right" style="width: 25%">
+        <div class="row">
+            <div id="" class="builder-element-container scroll">
+                <div class=" builder-element-pick">
+                    Basic
+                </div>
+                <div class="row mr10 ml10 mt20  text-center">
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-image">
+                            <span class="fa fa-picture-o fs40 holder-icon"></span>
+                            <br> Image
+                        </a>
+                    </div>
+                    <div class="col-md-6 ui-draggable">
+                        <a class="holder-style p15 mb20 ui-draggable" href="#modal-text">
+                            <span class="fa fa-text-height fs40 holder-icon"></span>
+                            <br> Title
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-form">
+                            <span class="glyphicons glyphicons-align_left fs40 holder-icon"></span>
+                            <br> Text
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-panel">
+                            <span class="glyphicons glyphicons-google_maps fs40 holder-icon"></span>
+                            <br> Map
+                        </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a class="holder-style p10 mb20" href="#modal-video" style="line-height: 14px">
+                            <span class="fa fa-list-alt fs40 holder-icon"></span>
+                            <br /> Contact Form
+                        </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a class="holder-style p15 mb20" href="#modal-ajax">
+                            <span class="glyphicons glyphicons-magic fs40 holder-icon"></span>
+                            <br> Slide Show
+                        </a>
+                    </div>
+                </div>
+                <div class=" builder-element-pick">
+                    Structure
+                </div>
+                <div class="row mr10 ml10 mt20 text-center">
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-image">
+                            <span class="glyphicons glyphicons-vector_path_square fs40 holder-icon"></span>
+                            <br> Spacer
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-text">
+                            <span class="glyphicons glyphicons-vector_path_line  fs40 holder-icon"></span>
+                            <br> Divider
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-form">
+                            <span class="glyphicons glyphicons-macbook fs40 holder-icon"></span>
+                            <br> Button
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-panel">
+                            <span class="glyphicons glyphicons-search fs40 holder-icon"></span>
+                            <br> Search Box
+                        </a>
+                    </div>
+
+                </div>
+                <div class=" builder-element-pick">
+                    Products
+                </div>
+                <div class="row mr10 ml10 mt20 text-center">
+
+                    <div class="col-md-6 ">
+                        <a class="holder-style p15 mb20" href="#modal-video">
+                            <span class="glyphicons glyphicons-show_thumbnails fs40 holder-icon"></span>
+                            <br> Grib View
+                        </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a class="holder-style p15 mb20" href="#modal-ajax">
+                            <span class="glyphicons glyphicons-show_thumbnails_with_lines fs40 holder-icon"></span>
+                            <br> List View
+                        </a>
+                    </div>
+
+                </div>
+                <div class=" builder-element-pick">
+                    Media
+                </div>
+                <div class="row mr10 ml10 mt20 text-center">
+                    <div class="col-md-6">
+                        <a class="holder-style p15  mb20" href="#modal-image">
+                            <span class="fa fa-picture-o fs40 holder-icon"></span>
+                            <br> Image
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-text">
+                            <span class="fa fa-text-height fs40 holder-icon"></span>
+                            <br> Text
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-form">
+                            <span class="fa fa-pencil-square-o fs40 holder-icon"></span>
+                            <br> Form
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="holder-style p15 mb20" href="#modal-panel">
+                            <span class="fa fa-map-marker fs40 holder-icon"></span>
+                            <br> Panel
+                        </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a class="holder-style p15 mb20" href="#modal-video">
+                            <span class="fa fa-film fs40 holder-icon"></span>
+                            <br> Video
+                        </a>
+                    </div>
+                    <div class="col-md-6 ">
+                        <a class="holder-style p15 mb20" href="#modal-ajax">
+                            <span class="fa fa-spinner fs40 holder-icon"></span>
+                            <br> Ajax
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</section>
