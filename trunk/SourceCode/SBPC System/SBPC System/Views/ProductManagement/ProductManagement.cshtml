@@ -2,492 +2,514 @@
     ViewBag.Title = "ProductManagement";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<!-- Start: Topbar -->
+ <!-- Start: Topbar -->
+<header id="topbar">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="dashboard.html">Products Management</a>
+            </li>
+            <li class="crumb-icon">
+                <a href="dashboard.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="crumb-link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="crumb-trail">Dashboard</li>
+        </ol>
+    </div>
+</header>
+<!-- End: Topbar -->
+<section id="content" class="table-layout">
+    <div class="col-md-12">
+
+        <div class="panel panel-visible">
+            <div class="panel-heading">
+                <div class="panel-title hidden-xs">
+                    <span class="glyphicon glyphicon-tasks"></span>
+
+                    Products List
 
-<div class="col-md-12">
-
-    <div class="panel panel-visible">
-        <div class="panel-heading">
-            <div class="panel-title hidden-xs">
-                <span class="glyphicon glyphicon-tasks"></span>
-
-                Products List
-
-            </div>
-        </div>
-        <div class="panel-body pn">
-            <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                <div class="dt-panelmenu clearfix">
-                    <div id="datatable2_length" class="dataTables_length">
-                    
-                    </div>
-                    <div id="datatable2_filter" class="dataTables_filter">
-
-                    </div>
-                </div>
-                <table id="datatable2" class="table table-striped table-bordered table-hover dataTable no-footer" width="100%" cellspacing="0" role="grid" aria-describedby="datatable2_info" style="width: 100%;">
-
-                    <thead>
-                        <tr role="row">
-                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 96px;" aria-label="Image">
-
-                                Image
-
-                            </th>
-                            <th class="sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 192px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">
-
-                                Product Code
-
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 286px;" aria-label="Position: activate to sort column ascending">
-
-                                Product Name
-
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 105px;" aria-label="Office: activate to sort column ascending">
-
-                                Price
-
-                            </th>
-                            <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 139px;" aria-label="Start date: activate to sort column ascending">
-
-                                Available Quantity
-
-                            </th>
-                            <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 96px;" aria-label="Manipulation">
-
-                                Manipulation
-
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;"/>
-                            </td>
-                            <td class="sorting_1">
-
-                                B001
-
-                            </td>
-                            <td>
-
-                              Blue Exchange T shirt
-
-                            </td>
-                            <td>
-
-                                800.000
-
-                            </td>
-                            <td>
-
-                                2
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="even" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                CA400
-
-                            </td>
-                            <td>
-
-                                PT2000 Jean trousert
-
-                            </td>
-                            <td>
-
-                                450.0000
-
-                            </td>
-                            <td>
-
-                                35
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                H7001A
-
-                            </td>
-                            <td>
-
-                                PT2000 T-Shirt
-
-                            </td>
-                            <td>
-
-                                270.000
-
-                            </td>
-                            <td>
-
-                                12
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="even" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                               V2013D
-
-                            </td>
-                            <td>
-
-                               X-men Hat
-
-                            </td>
-                            <td>
-
-                                670.000
-
-                            </td>
-                            <td>
-
-                                2
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr class="odd" role="row">
-                            <td>
-                                <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
-                            </td>
-                            <td class="sorting_1">
-
-                                HGT2001
-
-                            </td>
-                            <td>
-
-                                Blue-Exchange Shirt
-
-                            </td>
-                            <td>
-
-                                340.000
-
-                            </td>
-                            <td>
-
-                                34
-
-                            </td>
-                            <td>
-                                <div style="text-align:center">
-                                    <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
-                                    <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </tbody>
-
-                </table>
-                <div class="dt-panelfooter clearfix">
-                    <div id="datatable2_info" class="dataTables_info" role="status" aria-live="polite">
-                       
-                    </div>
-                    <div id="datatable2_paginate" class="dataTables_paginate paging_simple_numbers">
-                     
-                    </div>
                 </div>
             </div>
+            <div class="panel-body pn">
+                <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                    <div class="dt-panelmenu clearfix">
+                        <div id="datatable2_length" class="dataTables_length">
+
+                        </div>
+                        <div id="datatable2_filter" class="dataTables_filter">
+
+                        </div>
+                    </div>
+                    <table id="datatable2" class="table table-striped table-bordered table-hover dataTable no-footer" width="100%" cellspacing="0" role="grid" aria-describedby="datatable2_info" style="width: 100%;">
+
+                        <thead>
+                            <tr role="row">
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 96px;" aria-label="Image">
+
+                                    Image
+
+                                </th>
+                                <th class="sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 192px;" aria-sort="ascending" aria-label="Name: activate to sort column descending">
+
+                                    Product Code
+
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 286px;" aria-label="Position: activate to sort column ascending">
+
+                                    Product Name
+
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 105px;" aria-label="Office: activate to sort column ascending">
+
+                                    Price
+
+                                </th>
+                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" style="width: 139px;" aria-label="Start date: activate to sort column ascending">
+
+                                    Available Quantity
+
+                                </th>
+                                <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 96px;" aria-label="Manipulation">
+
+                                    Manipulation
+
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    B001
+
+                                </td>
+                                <td>
+
+                                    Blue Exchange T shirt
+
+                                </td>
+                                <td>
+
+                                    800.000
+
+                                </td>
+                                <td>
+
+                                    2
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    CA400
+
+                                </td>
+                                <td>
+
+                                    PT2000 Jean trousert
+
+                                </td>
+                                <td>
+
+                                    450.0000
+
+                                </td>
+                                <td>
+
+                                    35
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    H7001A
+
+                                </td>
+                                <td>
+
+                                    PT2000 T-Shirt
+
+                                </td>
+                                <td>
+
+                                    270.000
+
+                                </td>
+                                <td>
+
+                                    12
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="even" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    V2013D
+
+                                </td>
+                                <td>
+
+                                    X-men Hat
+
+                                </td>
+                                <td>
+
+                                    670.000
+
+                                </td>
+                                <td>
+
+                                    2
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="odd" role="row">
+                                <td>
+                                    <img src="~/Assets/img/no_thumbnail.png" style="height:50px; width:80px;" />
+                                </td>
+                                <td class="sorting_1">
+
+                                    HGT2001
+
+                                </td>
+                                <td>
+
+                                    Blue-Exchange Shirt
+
+                                </td>
+                                <td>
+
+                                    340.000
+
+                                </td>
+                                <td>
+
+                                    34
+
+                                </td>
+                                <td>
+                                    <div style="text-align:center">
+                                        <a href="#"><i class="fa fa-2x fa-pencil text-primary"></i></a>&nbsp;&nbsp;
+                                        <a href="#"> <i class="fa fa-2x fa-remove text-danger"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                    <div class="dt-panelfooter clearfix">
+                        <div id="datatable2_info" class="dataTables_info" role="status" aria-live="polite">
+
+                        </div>
+                        <div id="datatable2_paginate" class="dataTables_paginate paging_simple_numbers">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div>
+            <form action="RedirectToAddProduct" method="get">
+                <input type="submit" value="Add New Product" class="btn btn-primary">
+            </form>
+
         </div>
 
-       
-    </div>
-    <div>
-        <form action="RedirectToAddProduct" method="get">
-            <input type="submit" value="Add New Product" class="btn btn-primary">
-        </form> 
-       
     </div>
 
-</div>
-
+</section>
