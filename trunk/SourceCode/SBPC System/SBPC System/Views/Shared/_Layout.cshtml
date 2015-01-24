@@ -25,7 +25,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="tables-datatables-page sb-l-o sb-r-c onload-check">    
+<body class="tables-datatables-page sb-l-o sb-r-c onload-check">
     <script>
         var boxtest = localStorage.getItem('boxed');
         if (boxtest === 'true') {
@@ -194,7 +194,7 @@
                     </li>
 
                 </ul>
-                
+
             </div>
         </aside>
         <!-- Start: Content -->
@@ -242,25 +242,25 @@
             </div>
             <!-- End: Topbar-Dropdown -->
             @*<!-- Start: Topbar -->
-            <header id="topbar">
-                <div class="topbar-left">
-                    <ol class="breadcrumb">
-                        <li class="crumb-active">
-                            <a href="dashboard.html">Dashboard</a>
-                        </li>
-                        <li class="crumb-icon">
-                            <a href="dashboard.html">
-                                <span class="glyphicon glyphicon-home"></span>
-                            </a>
-                        </li>
-                        <li class="crumb-link">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="crumb-trail">Dashboard</li>
-                    </ol>
-                </div>
-            </header>
-            <!-- End: Topbar -->*@
+                <header id="topbar">
+                    <div class="topbar-left">
+                        <ol class="breadcrumb">
+                            <li class="crumb-active">
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="crumb-icon">
+                                <a href="dashboard.html">
+                                    <span class="glyphicon glyphicon-home"></span>
+                                </a>
+                            </li>
+                            <li class="crumb-link">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="crumb-trail">Dashboard</li>
+                        </ol>
+                    </div>
+                </header>
+                <!-- End: Topbar -->*@
             <!-- Begin: Content -->
             @*<section id="content" class="table-layout">*@
                 @RenderBody()
@@ -271,7 +271,6 @@
     <!-- End: Main -->
     <!-- BEGIN: PAGE SCRIPTS -->
     <!-- Google Map API -->
-
     <!-- jQuery -->
     <script src="~/Vendor/jquery/jquery-1.11.1.min.js"></script>
     <script src="~/Vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
@@ -289,7 +288,7 @@
     <!-- Theme Javascript -->
     <script src="~/Assets/js/utility/utility.js"></script>
     <script src="~/Assets/js/main.js"></script>
-   
+
     <script type="text/javascript">
         jQuery(document).ready(function () {
 
@@ -327,6 +326,72 @@
                     backdrop: 'static'
                 })
             });
+
+            // Init Boostrap Multiselect
+            $('#multiselect1').multiselect();
+            $('#multiselect2').multiselect({
+                includeSelectAllOption: true
+            });
+            $('#multiselect3').multiselect();
+            $('#multiselect4').multiselect({
+                enableFiltering: true,
+            });
+            $('#multiselect5').multiselect({
+                buttonClass: 'multiselect dropdown-toggle btn btn-default btn-primary'
+            });
+            $('#multiselect6').multiselect({
+                buttonClass: 'multiselect dropdown-toggle btn btn-default btn-info'
+            });
+            $('#multiselect7').multiselect({
+                buttonClass: 'multiselect dropdown-toggle btn btn-default btn-success'
+            });
+            $('#multiselect8').multiselect({
+                buttonClass: 'multiselect dropdown-toggle btn btn-default btn-warning'
+            });
+
+            // Init jQuery spinner init - default
+            $("#spinner1").spinner();
+
+            // Init jQuery spinner init - currency
+            $("#spinner2").spinner({
+                min: 5,
+                max: 2500,
+                step: 25,
+                start: 1000,
+                //numberFormat: "C"
+            });
+
+            // Init jQuery spinner init - decimal
+            $("#spinner3").spinner({
+                step: 0.01,
+                numberFormat: "n"
+            });
+
+            // jQuery Time Spinner settings
+            $.widget("ui.timespinner", $.ui.spinner, {
+                options: {
+                    // seconds
+                    step: 60 * 1000,
+                    // hours
+                    page: 60
+                },
+                _parse: function (value) {
+                    if (typeof value === "string") {
+                        // already a timestamp
+                        if (Number(value) == value) {
+                            return Number(value);
+                        }
+                        return +Globalize.parseDate(value);
+                    }
+                    return value;
+                },
+
+                _format: function (value) {
+                    return Globalize.format(new Date(value), "t");
+                }
+            });
+            // Init jQuery Time Spinner
+            $("#spinner4").timespinner();
 
             // Init Datatables with Tabletools Addon
             $('#datatable').dataTable({
@@ -559,9 +624,7 @@
             // $("select[name='datatable3_length']").chosen();
             // $("select[name='datatable4_length']").chosen();
 
-            // Init Xeditable Plugin
-            $.fn.editable.defaults.mode = 'popup';
-            $('.xedit').editable();
+            
 
         });
 
