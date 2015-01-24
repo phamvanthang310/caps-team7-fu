@@ -134,6 +134,7 @@
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -184,6 +185,7 @@
     <Content Include="Assets\img\logos\logo.png" />
     <Content Include="Assets\img\logos\logo_grey.png" />
     <Content Include="Assets\img\logos\logo_white.png" />
+    <Content Include="Assets\img\no_thumbnail.png" />
     <Content Include="Assets\img\patterns\backgrounds\1.jpg" />
     <Content Include="Assets\img\patterns\topbar-bg.jpg" />
     <Content Include="Assets\img\patterns\topbar-bg2.jpg" />
@@ -216,6 +218,7 @@
     <Content Include="Assets\js\pages\login\rAF.js" />
     <Content Include="Assets\js\pages\login\TweenLite.min.js" />
     <Content Include="Assets\js\pages\widgets.js" />
+    <Content Include="Assets\js\productManagement.js" />
     <Content Include="Assets\js\utility\highlight\styles\googlecode.css" />
     <Content Include="Assets\js\utility\jvectormap\assets\jquery-jvectormap-world-mill-en.js" />
     <Content Include="Assets\js\utility\utility.js" />
@@ -477,6 +480,8 @@
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\BuilderPage\BuilderPage.cshtml" />
     <Content Include="Views\Shared\Builder\_RightMenu.cshtml" />
+    <Content Include="Views\ProductManagement\ProductManagement.cshtml" />
+    <Content Include="Views\ProductManagement\AddProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
