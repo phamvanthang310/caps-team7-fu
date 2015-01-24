@@ -131,6 +131,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\User\Controllers\ProfileController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -218,7 +219,6 @@
     <Content Include="Assets\js\pages\login\rAF.js" />
     <Content Include="Assets\js\pages\login\TweenLite.min.js" />
     <Content Include="Assets\js\pages\widgets.js" />
-    <Content Include="Assets\js\productManagement.js" />
     <Content Include="Assets\js\utility\highlight\styles\googlecode.css" />
     <Content Include="Assets\js\utility\jvectormap\assets\jquery-jvectormap-world-mill-en.js" />
     <Content Include="Assets\js\utility\utility.js" />
@@ -312,6 +312,7 @@
     <Content Include="Assets\fonts\stateface\stateface-regular-webfontd41d.eot" />
     <Content Include="Assets\fonts\zocial\zocial-regular-webfont.eot" />
     <Content Include="Assets\fonts\zocial\zocial-regular-webfont.ttf" />
+    <Content Include="Areas\User\Views\Profile\Profile.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -488,7 +489,6 @@
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\User\Controllers\" />
     <Folder Include="Areas\User\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Models\" />
