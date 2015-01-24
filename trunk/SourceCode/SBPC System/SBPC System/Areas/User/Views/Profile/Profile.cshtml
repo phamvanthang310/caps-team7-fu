@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="content">
+    <div class="col-md-8">
+        <div class="panel">
+            <div class="panel-heading">
+                <span class="panel-title">Account Management</span>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Account</label>
+                        <div class="col-lg-8">
+                            <p class="form-control-static text-muted">FirstUser</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputStandard" class="col-lg-3 control-label">Full Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" id="inputStandard" class="form-control" value="Type Here...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-lg-3 control-label">Email</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="form-control" value="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledInput" class="col-lg-3 control-label">Phone</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="form-control" value="0792426">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label" for="textArea1">Address</label>
+                        <div class="col-lg-8">
+                            <textarea class="form-control textarea-grow" id="textArea1" rows="4">abc street district 1 HCM city, VietNam</textarea>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="button btn-lg btn-primary btn-block" type="submit">Save</button>
+                        <button class="button btn-lg btn-primary btn-block" type="submit">Change Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div class="col-md-8">
+    <style>
+        #bronze {
+            width: 126px;
+            height: 102px;
+            background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 0;
+        }
+        #test {
+            color: red;
+        }
+    </style>
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading">
+                <span class="panel-title">
+                    <span class="glyphicon glyphicon-cog hidden"></span>
+                    <span class="widget-menu pull-right mr10">
+                        <a href="" />
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+                    </span>
+                </span>
+                <span class="panel-body">
+                    <img src="~/Assets/img/avatars/profile_avatar.jpg" height="300" width="300" /> <br/>
+                    <img id="bronze" src="" /><br />
+                    <button class="button btn-xs btn-danger">Upgrade</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</div>
