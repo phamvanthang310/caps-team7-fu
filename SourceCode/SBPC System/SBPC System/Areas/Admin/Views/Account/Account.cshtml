@@ -51,7 +51,7 @@
                                 <a href="#tab1" data-toggle="tab" aria-expanded="true"> <span class="glyphicon glyphicon-tasks"></span>Account management</a>
                             </li>
                             <li class="">
-                                <a href="#tab2" data-toggle="tab" aria-expanded="false">Create new Account Type</a>
+                                <a href="#tab2" data-toggle="tab" aria-expanded="true">Create new Account Type</a>
                             </li>
                         </ul>
                     </div>
@@ -60,59 +60,117 @@
                              <span class="glyphicon glyphicon-tasks"></span>Account management</div>
 
                      </div> -->
-                    <div class="panel panel-visible">
+                    
                         
-                        <div class="panel-body pn">
-                            <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                        <div class="panel-body">
+                            <div class="tab-content pn br-n">
+                                <div id="tab1" class="tab-pane active">
+                                    <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
 
-                                <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">                                    
-                                    <table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable2" cellspacing="0" width="100%" role="grid" aria-describedby="datatable2_info" style="width: 100%;">
-                                        <thead>
-                                            <tr role="row">
-                                                <th class="sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 182px;" aria-sort="ascending">Account Type</th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 272px;">Price</th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 100px;">Duration</th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 65px;">Start date</th>
-                                                <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 133px;">End Date</th>
-                                                <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Salary" style="width: 95px;">Active/Deactive</th></tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">Gold</td>
-                                                <td>50</td>
-                                                <td>1 year</td>
-                                                <td>2012/10/13</td>
-                                                <td>2012/10/13</td>
-                                                <td><div class="switch switch-primary round switch-inline">
-    <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
-    <label for="exampleCheckboxSwitch4">Active</label>
-</div></td>
-                                            </tr>
-                                            <tr role="row" class="even">
-                                                <td class="sorting_1">Silver</td>
-                                                <td>30</td>
-                                                <td>1 year</td>
-                                                <td>2012/12/02</td>
-                                                <td>2012/12/02</td>
-                                                <td><div class="switch switch-primary round switch-inline">
-    <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
-    <label for="exampleCheckboxSwitch4">Active</label>
-</div></td>
-                                            </tr>
-                                            <tr role="row" class="odd">
-                                                <td class="sorting_1">Bronze</td>
-                                                <td>20</td>
-                                                <td>1 year</td>
-                                                <td>2012/03/29</td>
-                                                <td>2012/03/29</td>
-                                                <td><div class="switch switch-primary round switch-inline">
-    <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
-    <label for="exampleCheckboxSwitch4">Active</label>
-</div></td>
-                                            </tr>                                         
-                                            
-                                        </tbody>
-                                    </table>                                    
+                                        <div id="datatable2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                            <table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable2" cellspacing="0" width="100%" role="grid" aria-describedby="datatable2_info" style="width: 100%;">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_asc" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 182px;" aria-sort="ascending">Account Type</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 272px;">Price</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 100px;">Duration</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 65px;">Start date</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="datatable2" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 133px;">End Date</th>
+                                                        <th class="sorting_disabled" rowspan="1" colspan="1" aria-label="Salary" style="width: 95px;">Active/Deactive</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1">Gold</td>
+                                                        <td>50</td>
+                                                        <td>1 year</td>
+                                                        <td>2012/10/13</td>
+                                                        <td>2012/10/13</td>
+                                                        <td>
+                                                            <div class="switch switch-primary round switch-inline">
+                                                                <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
+                                                                <label for="exampleCheckboxSwitch4">Active</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td class="sorting_1">Silver</td>
+                                                        <td>30</td>
+                                                        <td>1 year</td>
+                                                        <td>2012/12/02</td>
+                                                        <td>2012/12/02</td>
+                                                        <td>
+                                                            <div class="switch switch-primary round switch-inline">
+                                                                <input id="exampleCheckboxSwitch5" type="checkbox" checked="">
+                                                                <label for="exampleCheckboxSwitch5">Active</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td class="sorting_1">Bronze</td>
+                                                        <td>20</td>
+                                                        <td>1 year</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>2012/03/29</td>
+                                                        <td>
+                                                            <div class="switch switch-primary round switch-inline">
+                                                                <input id="exampleCheckboxSwitch6" type="checkbox" checked="">
+                                                                <label for="exampleCheckboxSwitch6">Active</label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div id="tab2" class="tab-pane">
+                            <div class="row">
+                                <div class="admin-form tab-pane active" id="register2" role="tabpanel">
+                                    <div class="panel panel-danger heading-border">
+                                        <!-- end .form-header section -->
+
+                                        <form method="post" action="http://admindesigns.com/" id="form-register2">
+                                            <div class="panel-body p25">
+                                                <!-- .section-divider -->
+
+                                                <div class="section row">
+                                                    <div class="col-md-12">
+                                                        <label for="firstname" class="field prepend-icon">
+                                                            <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="Account name...">
+                                                            <label for="firstname" class="field-icon">
+                                                                <i class="fa fa-user"></i>
+                                                            </label>
+                                                        </label>
+                                                    </div>
+                                                    <!-- end section -->
+
+                                                </div>
+                                                <!-- end .section row section -->
+
+                                                <div class="section">
+                                                    <label for="email" class="field prepend-icon">
+                                                        <input type="email" name="email" id="email" class="gui-input" placeholder="Benefit">
+                                                        <label for="email" class="field-icon">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </label>
+                                                    </label>
+                                                </div>
+                                                <!-- end section -->
+
+
+
+
+                                            </div>
+                                            <!-- end .form-body section -->
+                                            <div class="panel-footer">
+                                                <button type="submit" class="button btn-primary">Create Account</button>
+                                            </div>
+                                            <!-- end .form-footer section -->
+                                        </form>
+                                    </div>
+                                    <!-- end .admin-form section -->
                                 </div>
                             </div>
                         </div>
@@ -120,6 +178,7 @@
 
                 </div>
             </div>
+
             <!-- end: .col-md-12.admin-grid -->
 
         </div>

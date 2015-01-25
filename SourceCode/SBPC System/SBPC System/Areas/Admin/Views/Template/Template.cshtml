@@ -103,24 +103,24 @@
                                                     </td>
                                                 </tr>
                                                 <tr role="row" class="even">
-                                                    <td class="sorting_1">a</td>
-                                                    <td>1 year</td>
-                                                    <td>35</td>
+                                                    <td class="sorting_1">b</td>
+                                                    <td>2 year</td>
+                                                    <td>45</td>
                                                     <td>
                                                         <div class="switch switch-primary round switch-inline">
-                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
-                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                            <input id="exampleCheckboxSwitch5" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch5">Active</label>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr role="row" class="odd">
-                                                    <td class="sorting_1">a</td>
-                                                    <td>1 year</td>
-                                                    <td>35</td>
+                                                    <td class="sorting_1">c</td>
+                                                    <td>3 year</td>
+                                                    <td>55</td>
                                                     <td>
                                                         <div class="switch switch-primary round switch-inline">
-                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
-                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                            <input id="exampleCheckboxSwitch6" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch6">Active</label>
                                                         </div>
                                                     </td>
                                                 </tr>                                                
@@ -140,10 +140,12 @@
 
                                                     <div class="section row">
                                                         <div class="col-md-12">
-                                                            <label for="firstname" class="field prepend-icon">
-                                                                <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="Account name...">
-                                                                <label for="firstname" class="field-icon">
-                                                                    <i class="fa fa-user"></i>
+                                                            <label class="field prepend-icon file">
+                                                                <span class="button btn-primary">Choose File</span>
+                                                                <input type="file" class="gui-file" name="file2" id="file2" onchange="document.getElementById('uploader2').value = this.value;">
+                                                                <input type="text" class="gui-input" id="uploader2" placeholder="Please Select A File">
+                                                                <label class="field-icon">
+                                                                    <i class="fa fa-upload"></i>
                                                                 </label>
                                                             </label>
                                                         </div>
@@ -152,14 +154,7 @@
                                                     </div>
                                                     <!-- end .section row section -->
 
-                                                    <div class="section">
-                                                        <label for="email" class="field prepend-icon">
-                                                            <input type="email" name="email" id="email" class="gui-input" placeholder="Benefit">
-                                                            <label for="email" class="field-icon">
-                                                                <i class="fa fa-envelope"></i>
-                                                            </label>
-                                                        </label>
-                                                    </div>
+                                                    
                                                     <!-- end section -->
 
 
@@ -168,7 +163,7 @@
                                                 </div>
                                                 <!-- end .form-body section -->
                                                 <div class="panel-footer">
-                                                    <button type="submit" class="button btn-primary">Create Account</button>
+                                                    <button type="submit" class="button btn-primary">Submit Template</button>
                                                 </div>
                                                 <!-- end .form-footer section -->
                                             </form>
