@@ -2,103 +2,219 @@
     ViewBag.Title = "Profile";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<link rel="stylesheet" type="text/css" href="~/Vendor/plugins/magnific/magnific-popup.css">
+<script type="text/javascript" src="~/Vendor/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="~/Vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+<script src="~/Vendor/plugins/magnific/jquery.magnific-popup.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
 
-<style>
-    #bronze {
-        width: 126px;
-        height: 102px;
-        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 0;
-    }
-    #test {
-        color: red;
-    }
-</style>
 
-<!-- Start: Topbar -->
-<header id="topbar" class="">
-    <div class="topbar-left">
-        <ol class="breadcrumb">
-            <li class="crumb-active">
-                <a href="dashboard.html">Profile</a>
-            </li>
-            <li class="crumb-icon">
-                <a href="dashboard.html">
-                    <span class="glyphicon glyphicon-home"></span>
-                </a>
-            </li>
-            <li class="crumb-link">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="crumb-trail">Profile</li>
-        </ol>
-    </div>
-</header>
-<!-- End: Topbar -->
-<section id="content" class="table-layout">
-    <div id="content">
-        <div class="col-md-8">
-            <div class="panel">
-                <div class="panel-heading">
-                    <span class="panel-title">Account Management</span>
-                </div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Account</label>
-                            <div class="col-lg-8">
-                                <p class="form-control-static text-muted">FirstUser</p>
-                            </div>
+        // Init Theme Core
+        //Core.init();
+
+        // Animation
+        $('#password_popup').magnificPopup({
+            type: 'inline',
+            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+        $('#register_popup').magnificPopup({
+            type: 'inline',
+            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        });
+
+    });
+</script>
+
+
+
+<div id="content">
+    <div class="col-md-8">
+        <div class="panel">
+            <div class="panel-heading">
+                <span class="panel-title">Account Management</span>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Account</label>
+                        <div class="col-lg-8">
+                            <p class="form-control-static text-muted">FirstUser</p>
                         </div>
-                        <div class="form-group">
-                            <label for="inputStandard" class="col-lg-3 control-label">Full Name</label>
-                            <div class="col-lg-8">
-                                <input type="text" id="inputStandard" class="form-control" value="Type Here...">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputStandard" class="col-lg-3 control-label">Full Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" id="inputStandard" class="form-control" value="Type Here...">
                         </div>
-                        <div class="form-group">
-                            <label for="inputPassword" class="col-lg-3 control-label">Email</label>
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control" id="form-control" value="example@gmail.com">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword" class="col-lg-3 control-label">Email</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="form-control" value="example@gmail.com">
                         </div>
-                        <div class="form-group">
-                            <label for="disabledInput" class="col-lg-3 control-label">Phone</label>
-                            <div class="col-lg-8">
-                                <input type="text" class="form-control" id="form-control" value="0792426">
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="disabledInput" class="col-lg-3 control-label">Phone</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" id="form-control" value="0792426">
                         </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label" for="textArea1">Address</label>
-                            <div class="col-lg-8">
-                                <textarea class="form-control textarea-grow" id="textArea1" rows="4">abc street district 1 HCM city, VietNam</textarea>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label" for="textArea1">Address</label>
+                        <div class="col-lg-8">
+                            <textarea class="form-control textarea-grow" id="textArea1" rows="4">abc street district 1 HCM city, VietNam</textarea>
                         </div>
-                        <div class="panel-footer">
-                            <button class="button btn-lg btn-primary btn-block" type="submit">Save</button>
-                            <button class="button btn-lg btn-primary btn-block" type="submit">Change Password</button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="button btn-lg btn-primary btn-block" type="submit">Save</button>
+                        <a id="password_popup" class="button btn-lg btn-primary btn-block text-center" href="#modal-form">Change Password</a>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="panel">
-                <div class="panel-heading">
-                    <span class="panel-title">
-                        <span class="glyphicon glyphicon-cog hidden"></span>
-                        <span class="widget-menu pull-right mr10">
-                            <a href="" />
+    </div class="col-md-8">
+
+    
+    <style>
+        #bronze {
+            width: 126px;
+            height: 102px;
+            background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 0;
+        }
+        #silver {
+            width: 126px;
+            height: 102px;
+            background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 102;
+        }
+        #gold {
+            width: 126px;
+            height: 102px;
+            background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 204;
+        }
+    </style>
+    <div class="col-md-4">
+        <div class="panel">
+            <div class="panel-heading">
+                <span class="panel-title">
+                    <span class="glyphicon glyphicon-cog hidden"></span>
+                    <span class="widget-menu pull-right mr10">
+                        <a href="" />
                             <span class="glyphicon glyphicon-edit"></span>
-                            </a>
-                        </span>
+                        </a>
                     </span>
-                    <span class="panel-body">
-                        <img src="~/Assets/img/avatars/profile_avatar.jpg" height="300" width="300" /> <br />
-                        <img id="bronze" src="" /><br />
-                        <button class="button btn-xs btn-danger">Upgrade</button>
-                    </span>
-                </div>
+                </span>
+                <span class="panel-body">
+                    <img src="~/Assets/img/avatars/profile_avatar.jpg" height="300" width="300" /> <br/>
+                    <img id="bronze" src="" /><br />
+                    <a class="button btn-xs btn-danger" href="Upgrade">Upgrade</a>
+                </span>
             </div>
         </div>
     </div>
-</section>
+
+</div>
+
+<div id="modal-form" class="popup-basic admin-form mfp-with-anim mfp-hide">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <span class="panel-title">Change Password</span>
+        </div>
+        <div class="panel-body">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="account" class="col-lg-3 control-label">Account</label>
+                    <div class="col-lg-offset-8">
+                        <p class="form-control-static text-muted">Username</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="oldPassword" class="col-lg-3 control-label">Password</label>
+                    <div class="col-lg-8">
+                        <input type="password" id="oldPassword" class="form-control" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@*<div id="modal-form" class=" popup-basic admin-form mfp-with-anim mfp-hide">
+    <div class="admin-form tab-pane active" id="login2" role="tabpanel">
+        <div class="panel panel-primary heading-border">
+            <div class="panel-heading">
+                <span class="panel-title"><i class="fa fa-sign-in"></i>Login</span>
+            </div>
+            <!-- end .form-header section -->
+            @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+            {
+                <div class="panel-body ">
+                    <div class="section row">
+                        <div class="col-md-12 ">
+                            <div class="section-divider">
+                                <span>Login</span>
+                            </div>
+                            <!-- .tagline -->
+                            <div class="section">
+                                <label for="username" class="field prepend-icon">
+                                    @Html.TextBox("txtUsername", null, null, new { @class = "gui-input", placeholder = "Enter username" })
+                                    <label for="username" class="field-icon">
+                                        <i class="fa fa-user"></i>
+                                    </label>
+                                </label>
+                            </div>
+                            <!-- end section -->
+                            <div class="section">
+                                <label for="password" class="field prepend-icon">
+                                    @Html.Password("txtPassword", null, new { @class = "gui-input", placeholder = "Enter password" })
+                                    <label for="password" class="field-icon">
+                                        <i class="fa fa-lock"></i>
+                                    </label>
+                                </label>
+                            </div>
+                            <!-- end section -->
+                            <label class="block mt15 option option-primary">
+                                <input name="checked" type="checkbox">
+                                <span class="checkbox"></span>Remember me
+                            </label>
+                            <!-- end section -->
+                        </div>
+                        <div class="col-md-12 border-right">
+                            <div class="section-divider ">
+                                <span>OR Sign in With</span>
+                            </div>
+                            <!-- .tagline -->
+                            <div class="section col-md-6">
+                                <a href="#" class="button btn-social facebook span-left btn-block">
+                                    <span>
+                                        <i class="fa fa-facebook"></i>
+                                    </span>Facebook
+                                </a>
+                            </div>
+                            <div class="section col-md-6">
+                                <a href="#" class="button btn-social googleplus span-left btn-block">
+                                    <span>
+                                        <i class="fa fa-google-plus"></i>
+
+                                    </span>Google
+                                </a>
+                            </div>
+                            <!-- end section -->
+                        </div>
+                        <!-- end .colm section -->
+                        <!-- end .colm section -->
+                    </div>
+                    <!-- end .section row section -->
+                </div>
+                    <!-- end .form-body section -->
+                <div class="panel-footer">
+                    <button type="submit" class="button btn-primary">Sign in</button>
+                </div>
+                    <!-- end .form-footer section -->
+            }
+
+        </div>
+        <!-- end .admin-form section -->
+    </div>
+    <!-- end: .admin-form -->
+</div>*@

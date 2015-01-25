@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "Upgrade";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #bronze {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 0;
+    }
+
+    #silver {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 102;
+    }
+
+    #gold {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 204;
+    }
+</style>
+
+<div class="col-sm-12 col-md-11 center-column mt25">
+    <div class="pricing-table mt25">
+        <div class="col-sm-3">
+            <div class="pricing-plan pricing-compare">
+                <div class="plan-desc">
+                    <h1 class="mtn">Free Account</h1>
+                    @*<h6>Select your plan</h6>
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitlum.</p>*@
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>10GB</b> Disk Space</li>
+                        <li><i class="fa fa-refresh"></i> <b>5</b>Website</li>
+                        <li><i class="fa fa-globe"></i> <b>Allow Mapping Domain</b></li>
+                    </ul>
+                </div>
+                <div class="plan-icons">
+                    <ul>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-footer hidden">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="pricing-plan plan-info">
+                <div class="plan-header">
+                    <h2 class="mtn">Bronze</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>2</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>20GB</b> Disk Space</li>
+                        <li><i class="fa fa-refresh"></i> <b>10</b>Website</li>
+                        <li><i class="fa fa-globe"></i> <b>Allow Mapping Domain</b></li>
+                    </ul>
+                </div>
+                <div class="plan-icons">
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="pricing-plan plan-warning">
+                <div class="plan-header">
+                    <h2 class="mtn">Silver</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>5</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>40GB</b> Disk Space</li>
+                        <li><i class="fa fa-refresh"></i> <b>15</b>Website</li>
+                        <li><i class="fa fa-globe"></i> <b>Allow Mapping Domain</b></li>
+                    </ul>
+                </div>
+                <div class="plan-icons">
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="pricing-plan plan-primary">
+                <div class="plan-header">
+                    <h2 class="mtn">Gold</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>8</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>80GB</b> Disk Space</li>
+                        <li><i class="fa fa-refresh"></i> <b>Unlimit</b>Website</li>
+                        <li><i class="fa fa-globe"></i> <b>Allow Mapping Domain</b></li>
+                    </ul>
+                </div>
+                <div class="plan-icons">
+                    <ul>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
