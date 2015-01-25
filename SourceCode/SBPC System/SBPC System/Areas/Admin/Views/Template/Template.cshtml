@@ -1,0 +1,195 @@
+﻿@{
+    ViewBag.Title = "Template";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="content">
+
+    <!-- Dashboard Tiles -->
+    <div class="row mb10">
+        <div class="col-md-4">
+            <div class="panel bg-alert light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-picture-o "></i> </div>
+                    <h2 class="mt15 lh15"> <b>523</b> </h2>
+                    <h5 class="text-muted">Themes</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-info light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-file"></i> </div>
+                    <h2 class="mt15 lh15"> <b>348</b> </h2>
+                    <h5 class="text-muted">Website</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-danger light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-bar-chart-o"></i> </div>
+                    <h2 class="mt15 lh15"> <b>267</b> </h2>
+                    <h5 class="text-muted">Bought</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin-panels -->
+    <div class="admin-panels fade-onload ">
+
+        <!-- full width widgets -->
+        <div class="row">
+
+            <!-- Three panes -->
+            <div class="col-md-12" style="margin-top: 10px;">
+                <div class="panel panel-visible">
+                    <div class="panel">
+                        <ul class="nav panel-tabs-border panel-tabs panel-tabs-left">
+                            <li class="active">
+                                <a href="#tab1" data-toggle="tab" aria-expanded="true"> <span class="glyphicon glyphicon-tasks"></span>Template management</a>
+                            </li>
+                            <li class="">
+                                <a href="#tab2" data-toggle="tab" aria-expanded="false">Import new Template</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  <div class="heading row">
+                         <div class="panel-title col-md-8" style= "padding: 20px 20px">
+                             <span class="glyphicon glyphicon-tasks"></span>Account management</div>
+
+                     </div> -->
+                    <div class="panel-body">
+                        <div class="tab-content pn br-n">
+                            <div id="tab1" class="tab-pane active">
+                                <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+                                    <!-- <div class="dt-panelmenu clearfix">
+                                        <div class="dataTables_length" id="datatable3_length">
+                                            <label>Show <select name="datatable3_length" aria-controls="datatable3" class="form-control input-sm">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="-1">All</option>
+                                                </select> entries</label>
+                                        </div>
+                                        <div id="datatable3_filter" class="dataTables_filter">
+                                            <label>Search:<input type="search" class="form-control input-sm" placeholder="Enter Filter Terms Here...." aria-controls="datatable3">
+                                            </label>
+                                        </div>
+                                    </div> -->
+                                    <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                        <div class="DTTT_container"><a class="DTTT_button DTTT_button_copy" id="ToolTables_datatable3_0" tabindex="0" aria-controls="datatable3">
+                                            <span>Copy</span>
+                                            <div style="position: absolute; left: 0px; top: 0px; width: 49px; height: 24px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_1" src="vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="49" height="24" name="ZeroClipboard_TableToolsMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=49&amp;height=24" wmode="transparent"></div></a><a class="DTTT_button DTTT_button_csv" id="ToolTables_datatable3_1" tabindex="0" aria-controls="datatable3"><span>CSV</span><div style="position: absolute; left: 0px; top: 0px; width: 42px; height: 24px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_2" src="vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="42" height="24" name="ZeroClipboard_TableToolsMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=42&amp;height=24" wmode="transparent"></div></a><a class="DTTT_button DTTT_button_xls" id="ToolTables_datatable3_2" tabindex="0" aria-controls="datatable3"><span>Excel</span><div style="position: absolute; left: 0px; top: 0px; width: 50px; height: 24px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_3" src="vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="50" height="24" name="ZeroClipboard_TableToolsMovie_3" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=3&amp;width=50&amp;height=24" wmode="transparent"></div></a><a class="DTTT_button DTTT_button_pdf" id="ToolTables_datatable3_3" tabindex="0" aria-controls="datatable3"><span>PDF</span><div style="position: absolute; left: 0px; top: 0px; width: 43px; height: 24px; z-index: 99;"><embed id="ZeroClipboard_TableToolsMovie_4" src="vendor/plugins/datatables/extensions/TableTools/swf/copy_csv_xls_pdf.swf" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="43" height="24" name="ZeroClipboard_TableToolsMovie_4" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=4&amp;width=43&amp;height=24" wmode="transparent"></div></a><a class="DTTT_button DTTT_button_print" id="ToolTables_datatable3_4" title="View print view" tabindex="0" aria-controls="datatable3"><span>Print</span></a></div><div class="dt-panelmenu clearfix"></div><table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable3" cellspacing="0" width="100%" role="grid" aria-describedby="datatable3_info" style="width: 100%;">
+                                            <thead>
+                                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable3" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 188px;" aria-sort="ascending">Name</th>
+                                                <th rowspan="1" colspan="1" class="sorting" tabindex="0" aria-controls="datatable3" aria-label="Using time: activate to sort column ascending" style="width: 324px;">Using time</th>
+                                                <th rowspan="1" colspan="1" class="sorting" tabindex="0" aria-controls="datatable3" aria-label=": activate to sort column ascending" style="width: 82px;">Price</th>                                                
+                                                <th rowspan="1" colspan="1" class="sorting_disabled" aria-label="Active/Deactive" style="width: 224px;">Active/Deactive</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1">a</td>
+                                                    <td>1 year</td>                                                    
+                                                    <td>35</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="sorting_1">a</td>
+                                                    <td>1 year</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class="sorting_1">a</td>
+                                                    <td>1 year</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>                                                
+                                            </tbody>
+                                        </table></div>                                    
+                                </div>
+                            </div>
+                            <div id="tab2" class="tab-pane">
+                                <div class="row">
+                                    <div class="admin-form tab-pane active" id="register2" role="tabpanel">
+                                        <div class="panel panel-danger heading-border">
+                                            <!-- end .form-header section -->
+
+                                            <form method="post" action="http://admindesigns.com/" id="form-register2">
+                                                <div class="panel-body p25">
+                                                    <!-- .section-divider -->
+
+                                                    <div class="section row">
+                                                        <div class="col-md-12">
+                                                            <label for="firstname" class="field prepend-icon">
+                                                                <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="Account name...">
+                                                                <label for="firstname" class="field-icon">
+                                                                    <i class="fa fa-user"></i>
+                                                                </label>
+                                                            </label>
+                                                        </div>
+                                                        <!-- end section -->
+
+                                                    </div>
+                                                    <!-- end .section row section -->
+
+                                                    <div class="section">
+                                                        <label for="email" class="field prepend-icon">
+                                                            <input type="email" name="email" id="email" class="gui-input" placeholder="Benefit">
+                                                            <label for="email" class="field-icon">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </label>
+                                                        </label>
+                                                    </div>
+                                                    <!-- end section -->
+
+
+
+
+                                                </div>
+                                                <!-- end .form-body section -->
+                                                <div class="panel-footer">
+                                                    <button type="submit" class="button btn-primary">Create Account</button>
+                                                </div>
+                                                <!-- end .form-footer section -->
+                                            </form>
+                                        </div>
+                                        <!-- end .admin-form section -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end: .col-md-12.admin-grid -->
+
+        </div>
+        <!-- end: .row -->
+        <!-- partial width widgets -->
+
+
+    </div>
+
+    <!-- Primary Chart -->
+</section>
