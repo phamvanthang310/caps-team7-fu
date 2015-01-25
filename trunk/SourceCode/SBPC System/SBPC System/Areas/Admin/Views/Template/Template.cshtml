@@ -1,10 +1,29 @@
 ﻿@{
     ViewBag.Title = "Template";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+<!-- Start: Topbar -->
+<header id="topbar" class="">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="dashboard.html">Template Management</a>
+            </li>
+            <li class="crumb-icon">
+                <a href="dashboard.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="crumb-link">
+                <a href="index.html">Admin  </a>
+            </li>
 
+            <li class="crumb-trail">Template Management</li>
+        </ol>
+    </div>
+</header>
+<!-- End: Topbar -->
 <section id="content">
-
     <!-- Dashboard Tiles -->
     <div class="row mb10">
         <div class="col-md-4">

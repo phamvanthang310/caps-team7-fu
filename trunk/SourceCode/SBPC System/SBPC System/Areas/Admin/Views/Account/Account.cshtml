@@ -1,8 +1,28 @@
 ﻿@{
     ViewBag.Title = "Account";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
+<!-- Start: Topbar -->
+<header id="topbar" class="">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="dashboard.html">Account Management</a>
+            </li>
+            <li class="crumb-icon">
+                <a href="dashboard.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="crumb-link">
+                <a href="index.html">Admin  </a>
+            </li>
 
+            <li class="crumb-trail">Account Management</li>
+        </ol>
+    </div>
+</header>
+<!-- End: Topbar -->
 <section id="content">
 
     <!-- Dashboard Tiles -->
