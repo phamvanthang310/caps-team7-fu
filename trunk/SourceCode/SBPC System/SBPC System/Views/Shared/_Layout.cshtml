@@ -3,6 +3,7 @@
 <head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
+    <link href="~/Vendor/plugins/magnific/magnific-popup.css" rel="stylesheet" />
     <title>Site Builder For Product Catalogue</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font CSS (Via CDN) -->
@@ -124,7 +125,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a href="~/ProductManagement/ProductManagement">
+                        <a href="~/BuilderPage/BuilderPage">
                             <span class="glyphicons glyphicons-folder_open"></span>
                             <span class="sidebar-title">Your sites</span>
                         </a>
@@ -263,8 +264,8 @@
                 <!-- End: Topbar -->*@
             <!-- Begin: Content -->
             @*<section id="content" class="table-layout">*@
-                @RenderBody()
-                <!-- End: Content -->
+            @RenderBody()
+            <!-- End: Content -->
             @*</section>*@
         </section>
     </div>
@@ -280,7 +281,25 @@
     <script src="~/Vendor/plugins/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
 
     <script src="~/Vendor/plugins/datatables/media/js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="~/Vendor/plugins/magnific/jquery.magnific-popup.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
 
+            // Init Theme Core
+            Core.init();
+
+            // Animation
+            $('#login_popup').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+            $('#register_popup').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+
+        });
+    </script>
     <script src="~/Vendor/plugins/datatables/extensions/TableTools/js/dataTables.tableTools.min.js" type="text/javascript"></script>
     <!-- Bootstrap -->
     <script src="~/Assets/js/bootstrap/bootstrap.min.js"></script>
@@ -624,7 +643,7 @@
             // $("select[name='datatable3_length']").chosen();
             // $("select[name='datatable4_length']").chosen();
 
-            
+
 
         });
 

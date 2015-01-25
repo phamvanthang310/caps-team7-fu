@@ -30,6 +30,96 @@
         overflow-x: hidden;
         height: 100%;
     }
+
+    #demo-bar {
+        z-index: 1000;
+    }
+
+    .jx-bar-rounded-tr {
+    }
+
+    .jx-bar-rounded-tl {
+        border-top-left-radius: 5px;
+    }
+
+    .jx-bar {
+        height: 30px;
+        padding: 0px;
+        width: 50%;
+        background-color: #E5E5E5;
+        border: 1px solid #B5B5B5;
+    }
+
+    .jx-bar-button ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .jx-bar-button li {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-size: 11px;
+        cursor: pointer;
+        padding: 4px 8px;
+        border: 1px solid #1DA5D2;
+        margin: 2px;
+    }
+
+    .jx-bar-button li {
+        float: left;
+        list-style: outside none none;
+    }
+
+        .jx-bar-button li a:link, .jx-bar-button li a:visited {
+            font-family: Verdana,Arial,Helvetica,sans-serif;
+            font-size: 11px;
+            color: #666;
+            text-decoration: none;
+            padding: 1px;
+        }
+
+    .multiple-choice-box-selected .multiple-choice-box-inner-left, .multiple-choice-box-selected:hover .multiple-choice-box-inner-left {
+        border-right: 1px solid #B0CEB7;
+    }
+
+    .multiple-choice-box-inner-left {
+        float: left;
+        width: 43px;
+        border-right: 1px solid #E1E1E1;
+        padding: 30px 0px;
+        text-align: center;
+    }
+
+    .multiple-choice-box {
+        position: relative;
+        border: 1px solid #E1E1E1;
+        border-radius: 3px;
+        background: none repeat scroll 0% 0% #F6F7F9;
+        margin: 10px 0px;
+        text-shadow: none;
+        cursor: pointer;
+    }
+
+    .multiple-choice-box-selected .multiple-choice-box-inner-right, .multiple-choice-box-selected:hover .multiple-choice-box-inner-right {
+        border-left: 1px solid #F7FCF8;
+    }
+
+    .multiple-choice-box-inner-right {
+        float: left;
+        border-left: 1px solid #FFF;
+        padding: 12px 20px 10px 13px;
+        width: 615px;
+    }
+
+    .multiple-choice-box-title {
+        font-weight: bold;
+        font-size: 14px;
+        margin-bottom: 7px;
+        color: #333;
+    }
+
+    .multiple-choice-box-body {
+        color: #666;
+    }
 </style>
 <!-- Start: Topbar -->
 <header id="topbar" class="">
@@ -191,3 +281,154 @@
         </div>
     </aside>
 </section>
+
+<div id="demo-bar" class="jx-bar jx-bar-rounded-tl jx-bar-rounded-tr jx-bar-button jx-bar-button-rounded" style="z-index: 2000; overflow: hidden; position: fixed; bottom: 0px; margin-left: 67.5px; display: block; height: 40px;">
+    <ul>
+        <li style="border: 1px solid #1DA5D2;">
+            <a href="~/ProductManagement/ProductManagement">
+                <span class="glyphicons glyphicons-show_thumbnails_with_lines fs20 holder-icon text-primary"></span>
+                <b>Product Management</b>
+            </a>
+        </li>
+        <li style="border: 1px solid #1DA5D2;">
+            <a id="register_popup" href="#register-form-popup">
+                <span class="glyphicons glyphicons-show_thumbnails_with_lines fs20 holder-icon text-primary"></span>
+                <b>Map Website Domain</b>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="register-form-popup" class=" popup-basic admin-form mfp-with-anim mfp-hide" style="width: 610px; margin-left: auto; margin-right: auto;">
+    <div class="admin-form tab-pane active" id="register1" role="tabpanel">
+        <div class="panel panel-primary heading-border">
+            <div class="panel-heading">
+                <span class="panel-title">
+                    <i class="fa fa-pencil-square"></i>Choose Your Website Domain
+                </span>
+
+            </div>
+            <!-- end .form-header section -->
+            <form method="post" action="" id="form-register1">
+                <div id="domainSubdomain" class="multiple-choice-box multiple-choice-box-selected" onclick="domainChoiceSelect(this.id); return false;" style="width:603px; margin-bottom:18px; line-height:18px;">
+
+                    <div class="multiple-choice-box-inner-left" style="padding:44px 0px;">
+                        <input type="radio" onclick="return false;"></input>
+
+                    </div>
+                    <div id="domainSubdomain-2" class="multiple-choice-box-inner-right" style="width: 520px; position: relative; display: block;">
+
+                        <div class="multiple-choice-box-title" style="font-size:16px;">
+
+                            Use a Subdomain of SBPC.com
+
+                        </div>
+                        <div class="multiple-choice-box-body">
+
+                            A great way to get your website started
+
+                        </div>
+                        <div class="multiple-choice-box-body" style="margin-top:13px;">
+                            <span class="domainText">
+
+                                http://
+
+                            </span>
+                            <input id="weeblyDomain" class="shaded-input" type="text" style="margin:0px 7px; width:266px;" onkeyup="onTextChange(this.id)" onkeydown="$('domainSubdomain').select('.domain-check-success, .domain-check-taken').invoke('hide');"></input>
+
+                            <span class="domainText">
+
+                                .SBPC.com
+
+                            </span>
+                            <span id="weeblyDomainStatus" style="display:none;"></span>
+                        </div>
+                    </div>
+                    <div style="height: 0px; width: 0px; overflow: hidden; clear: both;"></div>
+
+                </div>
+                <div id="domainNewDomain" class="multiple-choice-box" onclick="domainChoiceSelect(this.id); return false;" style="width:603px; margin-bottom:18px; line-height:18px;">
+
+                    <div class="multiple-choice-box-inner-left" style="padding:44px 0px;">
+                        <input type="radio"></input>
+                    </div>
+                    <div id="domainNewDomain-2" class="multiple-choice-box-inner-right" style="width: 520px; position: relative; display: block;">
+                        <div class="multiple-choice-box-title" style="font-size:16px;">
+
+                            Register a New Domain
+
+                        </div>
+                        <div class="multiple-choice-box-body">
+
+                            For a more professional online presence
+
+                        </div>
+                        <div class="multiple-choice-box-body" style="margin-top:13px; position:relative;">
+                            <span class="domainText"></span>
+                            <input id="domain_sld" class="shaded-input" type="text" style="margin-left:3px;" onkeyup="onTextChange(this.id); return false;" name="domain_sld"></input>
+
+                            <div style="position:absolute; top:0px;; left:343px;">
+
+                                <div id="domain_tld"></div>
+                                <div class="weeblyDropDown" style="position: relative; margin-right: 0px; width: 65px;">
+                                    <div id="9790425_dropdownButton" class="dropdownButton" style="position: absolute; width: 21px; height: 25px; cursor: point…rop-down-larger.jpg" ) no-repeat scroll left top transparent;"></div>
+
+                                    <div id="9790425_dropdownContainer" style="width: 65px; height: 28px; position: absolute; border: 1px s…oll 0% 0% rgb(255, 255, 255); z-index: 20; overflow: hidden;"></div>
+
+                                </div>
+                                <div class="weeblyDropDown" style="position: relative; margin-right: 0px; width: 65px;">
+
+                                    <div id="8960565_dropdownButton" class="dropdownButton" style="position: absolute; width: 21px; height: 25px; cursor: point…rop-down-larger.jpg" ) no-repeat scroll left top transparent;"></div>
+
+                                    <div id="8960565_dropdownContainer" style="width: 65px; height: 28px; position: absolute; border: 1px s…oll 0% 0% rgb(255, 255, 255); z-index: 20; overflow: hidden;"></div>
+                                </div>
+                            </div>
+                            <span id="domainStatus" style="display:none;"></span>
+                        </div>
+                    </div>
+                    <div style="height: 0px; width: 0px; overflow: hidden; clear: both;"></div>
+
+                </div>
+                <div id="domainExistingDomain" class="multiple-choice-box" onclick="domainChoiceSelect(this.id); return false;" style="width:603px; line-height:18px;">
+
+                    <div class="multiple-choice-box-inner-left" style="padding:44px 0px;">
+                        <input type="radio"></input>
+                    </div>
+                    <div id="domainExistingDomain-2" class="multiple-choice-box-inner-right" style="width:520px; position:relative;">
+                        <div class="multiple-choice-box-title" style="font-size:16px;">
+                            <span id="domainExistingTitleDefault">
+
+                                Connect a Domain You Already Own
+
+                            </span>
+                            <span id="domainExistingTitleClient" style="display: none;">
+
+                                Enter Your Client's Domain Name
+
+                            </span>
+                            <img id="clientDomainHelp" title="Enter your client's domain name and we'll provide setup inst…button for this site when you are ready to setup the domain." src="/editor/images/help.png" style="display:none; position:relative; top:2px; left:5px;"></img>
+                        </div>
+                        <div id="existingDomainSubtitle" class="multiple-choice-box-body">
+
+                            We'll help you connect your domain when you're rea…
+
+                        </div>
+                        <div class="multiple-choice-box-body" style="margin-top:13px;position:relative;">
+                            <span class="domainText"></span>
+                            <input id="weeblyExistingDomain" class="shaded-input" type="text" onclick="if(this.value=='www.example.com'){this.value='';$(this).setStyle({color:''})}; return false;" onkeydown="$('existingDomainInvalid').hide();" style="width:350px; margin:0px 7px; color:#999;"></input>
+
+                        </div>
+                        <div id="existingDomainInvalid" class="domain-check-taken" style="display:none;"></div>
+                    </div>
+                    <div style="height: 0px; width: 0px; overflow: hidden; clear: both;"></div>
+
+                </div>
+                <!-- end .form-body section -->
+                <div class="panel-footer">
+                    <button type="submit" class="button btn-warning">Continue</button>
+                </div>
+                <!-- end .form-footer section -->
+            </form>
+        </div>
+        <!-- end .admin-form section -->
+    </div>
+</div>

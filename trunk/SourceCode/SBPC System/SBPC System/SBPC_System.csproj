@@ -139,6 +139,7 @@
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapDomainController.cs" />
     <Compile Include="Controllers\ProductManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -490,6 +491,7 @@
     <Content Include="Views\BuilderPage\BuilderPage.cshtml" />
     <Content Include="Views\ProductManagement\ProductManagement.cshtml" />
     <Content Include="Views\ProductManagement\AddProduct.cshtml" />
+    <Content Include="Views\MapDomain\MapDomain.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
