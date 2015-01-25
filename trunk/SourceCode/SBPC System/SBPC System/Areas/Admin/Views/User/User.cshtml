@@ -1,0 +1,155 @@
+﻿@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="content">
+
+    <!-- Dashboard Tiles -->
+    <div class="row mb10">
+        <div class="col-md-4">
+            <div class="panel bg-alert light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-picture-o "></i> </div>
+                    <h2 class="mt15 lh15"> <b>523</b> </h2>
+                    <h5 class="text-muted">Themes</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-info light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-file"></i> </div>
+                    <h2 class="mt15 lh15"> <b>348</b> </h2>
+                    <h5 class="text-muted">Website</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-danger light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-bar-chart-o"></i> </div>
+                    <h2 class="mt15 lh15"> <b>267</b> </h2>
+                    <h5 class="text-muted">Bought</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin-panels -->
+    <div class="admin-panels fade-onload ">
+
+        <!-- full width widgets -->
+        <div class="row">
+
+            <!-- Three panes -->
+            <div class="col-md-12" style="margin-top: 10px;">
+                <div class="panel panel-visible">
+                    <div class="panel">
+                        <ul class="nav panel-tabs-border panel-tabs panel-tabs-left">
+                            <li class="active">
+                                <a href="#tab1" data-toggle="tab" aria-expanded="true"> <span class="glyphicon glyphicon-tasks"></span>User management</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--  <div class="heading row">
+                         <div class="panel-title col-md-8" style= "padding: 20px 20px">
+                             <span class="glyphicon glyphicon-tasks"></span>Account management</div>
+
+                     </div> -->
+                    <div class="panel-body">
+                        <div class="tab-content pn br-n">
+                            <div id="tab1" class="tab-pane active">
+                                <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+                                    <!-- <div class="dt-panelmenu clearfix">
+                                        <div class="dataTables_length" id="datatable3_length">
+                                            <label>Show <select name="datatable3_length" aria-controls="datatable3" class="form-control input-sm">
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="25">25</option>
+                                                <option value="50">50</option>
+                                                <option value="-1">All</option>
+                                                </select> entries</label>
+                                        </div>
+                                        <div id="datatable3_filter" class="dataTables_filter">
+                                            <label>Search:<input type="search" class="form-control input-sm" placeholder="Enter Filter Terms Here...." aria-controls="datatable3">
+                                            </label>
+                                        </div>
+                                    </div> -->
+                                    <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                                        <table class="table table-striped table-bordered table-hover dataTable no-footer" id="datatable3" cellspacing="0" width="100%" role="grid" aria-describedby="datatable3_info" style="width: 100%;">
+                                            <thead>
+                                                <tr role="row"><th rowspan="1" colspan="1" class="sorting" tabindex="0" aria-controls="datatable3" aria-label="Name: activate to sort column ascending" style="width: 165px;">Name</th><th rowspan="1" colspan="1" class="sorting_desc" tabindex="0" aria-controls="datatable3" aria-label="Job: activate to sort column ascending" style="width: 256px;" aria-sort="descending">Job</th><th rowspan="1" colspan="1" class="sorting" tabindex="0" aria-controls="datatable3" aria-label="Account Type: activate to sort column ascending" style="width: 161px;">Account Type</th><th rowspan="1" colspan="1" class="sorting" tabindex="0" aria-controls="datatable3" aria-label="Website owning: activate to sort column ascending" style="width: 186px;">Website owning</th><th rowspan="1" colspan="1" class="sorting_disabled" aria-label="Salary" style="width: 87px;">Salary</th></tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td class="">Bradley Greer</td>
+                                                    <td class="sorting_1">Software Engineer</td>
+                                                    <td>Free</td>
+                                                    <td>41</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch7" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch7"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="">Cedric Kelly</td>
+                                                    <td class="sorting_1">Senior Javascript Developer</td>
+                                                    <td>Silver</td>
+                                                    <td>22</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch3" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch3"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td class="">Dai Rios</td>
+                                                    <td class="sorting_1">Personnel Lead</td>
+                                                    <td>Bronze</td>
+                                                    <td>35</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch4" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch4">Active</label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td class="">Brielle Williamson</td>
+                                                    <td class="sorting_1">Integration Specialist</td>
+                                                    <td>Gold</td>
+                                                    <td>61</td>
+                                                    <td>
+                                                        <div class="switch switch-primary round switch-inline">
+                                                            <input id="exampleCheckboxSwitch1" type="checkbox" checked="">
+                                                            <label for="exampleCheckboxSwitch1"></label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end: .col-md-12.admin-grid -->
+
+        </div>
+        <!-- end: .row -->
+        <!-- partial width widgets -->
+
+
+    </div>
+
+    <!-- Primary Chart -->
+</section>

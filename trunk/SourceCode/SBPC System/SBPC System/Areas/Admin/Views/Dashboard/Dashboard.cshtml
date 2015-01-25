@@ -1,0 +1,185 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<header id="topbar">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="crumb-icon">
+                <a href="dashboard.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="crumb-link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="crumb-trail">Dashboard</li>
+        </ol>
+    </div>
+    <div class="topbar-right">
+        <div class="ib topbar-dropdown">
+            <label for="topbar-multiple" class="control-label pr10 fs11 text-muted">Reporting Period</label>
+            <select id="topbar-multiple" multiple="multiple" style="display: none;">
+                <optgroup label="Filter By:">
+                    <option value="1-1">Last 30 Days</option>
+                    <option value="1-2" selected="selected">Last 60 Days</option>
+                    <option value="1-3">Last Year</option>
+                </optgroup>
+            </select><div class="btn-group"><button type="button" class="multiselect dropdown-toggle btn btn-default btn-sm ph15" data-toggle="dropdown" title="Last 60 Days">Last 60 Days <b class="caret"></b></button><ul class="multiselect-container dropdown-menu pull-right"><li class="multiselect-item multiselect-group"><label>Filter By:</label></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1-1"> Last 30 Days</label></a></li><li class="active"><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1-2"> Last 60 Days</label></a></li><li><a href="javascript:void(0);"><label class="checkbox"><input type="checkbox" value="1-3"> Last Year</label></a></li></ul></div>
+        </div>
+        <div class="ml15 ib va-m" id="toggle_sidemenu_r">
+            <a href="#" class="pl5">
+                <i class="fa fa-sign-in fs22 text-primary"></i>
+                <span class="badge badge-hero badge-danger">3</span>
+            </a>
+        </div>
+    </div>
+</header>
+<section id="content">
+
+    <!-- Dashboard Tiles -->
+    <div class="row mb10">
+        <div class="col-md-4">
+            <div class="panel bg-alert light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-picture-o "></i> </div>
+                    <h2 class="mt15 lh15"> <b>523</b> </h2>
+                    <h5 class="text-muted">Themes</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-info light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-file"></i> </div>
+                    <h2 class="mt15 lh15"> <b>348</b> </h2>
+                    <h5 class="text-muted">Website</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel bg-danger light of-h mb10">
+                <div class="pn pl20 p5">
+                    <div class="icon-bg"> <i class="fa fa-bar-chart-o"></i> </div>
+                    <h2 class="mt15 lh15"> <b>267</b> </h2>
+                    <h5 class="text-muted">Bought</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin-panels -->
+    <div class="admin-panels fade-onload sb-l-o-full ui-sortable animated fadeIn">
+
+        <!-- full width widgets -->
+        <div class="row">
+
+            <!-- Three panes -->
+            <div class="col-md-12 admin-grid" id="grid-0">
+
+                <div class="panel sort-disable mobile-controls" id="p0">
+                    <div class="panel-heading">
+                        <span class="panel-title">Data Panel (Dragging Disabled)</span>
+                        <span class="panel-controls" data-original-title="" title=""><a href="#" class="panel-control-loader"></a><a href="#" class="panel-control-remove"></a><a href="#" class="panel-control-title"></a><a href="#" class="panel-control-color"></a><a href="#" class="panel-control-collapse"></a><a href="#" class="panel-control-fullscreen"></a></span>
+                    </div>
+                    <div class="panel-body mnw700 of-a">
+                        <div class="row">
+
+                            <!-- Chart Column -->
+                            <div class="col-md-8 pln br-r mvn15">
+                                <h5 class="ml5 mt20 ph10 pb5 br-b fw700">Most theme popular <small class="pull-right fw600">13,253 <span class="text-primary">(total)</span> </small> </h5>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+                                        35%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" style="width: 19%;">
+                                        19%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="11" aria-valuemin="0" aria-valuemax="100" style="width: 11%;">
+                                        11%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%;">
+                                        7%
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-alert" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                                        5%
+                                    </div>
+                                </div>
+                                <div class="chart-legend" data-chart-id="#high-area">
+                                    <a data-chart-id="0" class="legend-item btn btn-sm btn-primary ph20 mr10">Theme 1</a>
+                                    <a data-chart-id="1" class="legend-item btn btn-sm btn-success mr10">Theme 2</a>
+                                    <a data-chart-id="2" class="legend-item btn btn-sm btn-warning mr10">Theme 3</a>
+                                    <a data-chart-id="1" class="legend-item btn btn-sm btn-info mr10">Theme 4</a>
+                                    <a data-chart-id="2" class="legend-item btn btn-sm btn-alert mr10">Theme 5</a>
+                                </div>
+
+                            </div>
+
+                            <!-- Multi Text Column -->
+                            <!-- Flag/Icon Column -->
+                            <div class="col-md-4">
+                                <h5 class="mt5 ph10 pb5 br-b fw700">Payment<small class="pull-right fw700 text-primary">Management</small> </h5>
+                                <div class="panel-body pn">
+                                    <table class="table mbn tc-icon-1 tc-med-2 tc-bold-last">
+                                        <thead>
+                                            <tr class="hidden">
+                                                <th class="mw30">#</th>
+                                                <th>First Name</th>
+                                                <th>Revenue</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa fa-desktop text-warning"></span>
+                                                </td>
+                                                <td>Gold</td>
+                                                <td><i class="fa fa-caret-up text-info pr10"></i>$855,913</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa fa-desktop text-default"></span>
+                                                </td>
+                                                <td>Silver</td>
+                                                <td><i class="fa fa-caret-down text-danger pr10"></i>$349,712</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fa fa-newspaper-o text-alert"></span>
+                                                </td>
+                                                <td>Bronze</td>
+                                                <td><i class="fa fa-caret-up text-info pr10"></i>$95,342</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <!-- Icon Column -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end: .col-md-12.admin-grid -->
+
+        </div>
+        <!-- end: .row -->
+        <!-- partial width widgets -->
+
+
+    </div>
+
+    <!-- Primary Chart -->
+</section>
