@@ -115,7 +115,17 @@
                                     <textarea id="textArea2" class="form-control" rows="3"></textarea>
                                 </div>
                             </div>
-                            <input type="submit" value="Add" class="btn btn-primary">
+                            @{
+                                if (Request.QueryString["param"] == "Update")
+                                {
+                                    <input type="submit" value="Update" class="btn btn-primary">
+                                }
+                                else
+                                {
+                                    <input type="submit" value="Add" class="btn btn-primary">
+                                }
+                            }
+
                         </form>
                     </div>
 
