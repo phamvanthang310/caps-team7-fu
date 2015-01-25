@@ -24,10 +24,13 @@ namespace SBPC_System.Controllers
         {
             if (txtUsername == "admin" && txtPassword == "admin")
             {
-                return View();
+                return RedirectToAction("Dashboard", "Dashboard", new { area = "Admin" });
+            }
+            if (txtUsername == "user" && txtPassword == "user")
+            {
+                return RedirectToAction("SiteManagement", "Profile", new { area = "User" });
             }
             return Redirect("Index");
         }
-
     }
 }

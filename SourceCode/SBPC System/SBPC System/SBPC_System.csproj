@@ -322,6 +322,9 @@
     <Content Include="Areas\Admin\Views\Account\Account.cshtml" />
     <Content Include="Areas\Admin\Views\Template\Template.cshtml" />
     <Content Include="Areas\Admin\Views\User\User.cshtml" />
+    <Content Include="Areas\User\Views\Profile\SiteManagement.cshtml" />
+    <Content Include="Areas\User\Views\Profile\Upgrade.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -497,7 +500,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\User\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Models\" />

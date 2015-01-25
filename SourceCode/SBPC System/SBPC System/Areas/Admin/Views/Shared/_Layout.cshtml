@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html>
 <head>
     <!-- Meta, title, CSS, favicons, etc. -->
@@ -100,7 +101,7 @@
                 <li class="inline">
                     <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown">
                         <img src="~/Assets/img/avatars/5.jpg" alt="avatar" class="mw30 br64 mr15" />
-                        <span>Thang Pham</span>
+                        <span>Administrator</span>
                     </a>
                 </li>
                 <li>
@@ -119,72 +120,27 @@
                 <ul class="nav sidebar-menu">
                     <li class="sidebar-label pt20">Menu</li>
                     <li class="active">
-                        <a href="/User/Profile/SiteManagement">
-                            <span class="glyphicons glyphicons-folder_open"></span>
-                            <span class="sidebar-title">Your sites</span>
+                        <a href="/Admin/Dashboard/Dashboard">
+                            <span class="glyphicons glyphicons-home"></span>
+                            <span class="sidebar-title">Dashboard</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="/User/Profile/Profile">
-                            <span class="glyphicons glyphicons-settings"></span>
-                            <span class="sidebar-title">Account Setting</span>
+                        <a href="/Admin/User/User">
+                            <span class="glyphicons glyphicons-user"></span>
+                            <span class="sidebar-title">User Management</span>
                         </a>
                     </li>
                     <li class="">
-                        <a href="">
-                            <span class="glyphicons glyphicons-adress_book"></span>
-                            <span class="sidebar-title">Contact Us</span>
+                        <a href="/Admin/Account/Account">
+                            <span class="glyphicons glyphicons-certificate"></span>
+                            <span class="sidebar-title">Account Type Management</span>
                         </a>
                     </li>
-                    <!-- sidebar bullets -->
-                    <li class="sidebar-label pt20">Published sites</li>
-                    <li class="sidebar-proj">
-                        <a href="#projectOne">
-                            <span class="fa fa-dot-circle-o text-primary-light"></span>
-                            <span class="sidebar-title">Forum Site</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-proj">
-                        <a href="#projectTwo">
-                            <span class="fa fa-dot-circle-o text-info-light"></span>
-                            <span class="sidebar-title">Ecommerce Site</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-proj">
-                        <a href="#projectTwo">
-                            <span class="fa fa-dot-circle-o text-system-light"></span>
-                            <span class="sidebar-title">Catalogue site</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-proj">
-                        <a href="#projectThree">
-                            <span class="fa fa-dot-circle-o text-alert-light"></span>
-                            <span class="sidebar-title">CMS Site</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-proj">
-                        <a href="#projectTwo">
-                            <span class="sidebar-title">...</span>
-                        </a>
-                    </li>
-                    <!-- sidebar progress bars -->
-                    <li class="sidebar-label pt25 pb10">User Stats</li>
-
-                    <li class="sidebar-proj">
-                        <a href="#">
-                            <span class="fa fa-star text-warning-light"></span>
-                            <span class="sidebar-title ">Premium User</span>
-                        </a>
-                    </li>
-                    <li class="sidebar-stat mb10">
-                        <a href="#" class="">
-                            <span class="fa fa-inbox text-danger-light"></span>
-                            <span class="sidebar-title ">Sites Storage</span>
-                            <span class="pull-right mr20 text-white">4/10</span>
-                            <div class="progress progress-bar-xs ml20 mr20">
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                </div>
-                            </div>
+                    <li class="">
+                        <a href="/Admin/Template/Template">
+                            <span class="glyphicons glyphicons-display"></span>
+                            <span class="sidebar-title">Template Management</span>
                         </a>
                     </li>
 
@@ -311,7 +267,7 @@
             Core.init();
 
             //// Init Demo JS
-            Demo.init();
+            //Demo.init();
 
             // Init Highlight.js Plugin
             $('pre code').each(function (i, block) {
@@ -645,3 +601,4 @@
     <!-- END: PAGE SCRIPTS -->
 </body>
 </html>
+
