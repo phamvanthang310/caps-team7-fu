@@ -1,0 +1,463 @@
+﻿@{
+    ViewBag.Title = "AllTemplates";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    #fwtTemplatesList {
+        font: 16px Arial;
+        width: 100%;
+    }
+
+        #fwtTemplatesList ul {
+            display: block;
+            list-style: outside none none;
+            margin: 0px;
+            min-height: 0px;
+            padding: 10px 0px;
+            overflow: hidden;
+        }
+
+            #fwtTemplatesList ul li {
+                float: left;
+                margin: 0px 10px 10px;
+            }
+
+    li {
+        list-style: outside none none;
+    }
+
+    ul#fwtTopLinksX {
+        overflow: hidden;
+        display: block;
+        list-style: outside none none;
+        padding: 20px 0px 0px 0px;
+        margin-left: 0px;
+    }
+
+        ul#fwtTopLinksX li {
+            float: left;
+            list-style: outside none none;
+            margin: 0px;
+            padding: 0px;
+            display: list-item;
+            width: 15%;
+            text-align: center;
+        }
+
+            ul#fwtTopLinksX li a {
+                display: inline;
+                font-family: Arial;
+                font-size: 14px;
+                color: #000;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+    #fwtTemplatesList ul li a {
+        color: #000;
+        display: block;
+        font-family: Arial;
+        font-size: 0.9em;
+        padding: 3px 0px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        width: 220px;
+    }
+
+    a:link, a:visited {
+        color: #176093;
+        text-decoration: none;
+    }
+
+    #fwtTemplatesList ul li img {
+        border: 1px solid #FFF;
+        box-shadow: 0px 0px 5px #888;
+    }
+
+    img {
+    }
+
+    fieldset, img {
+        border: 0px none;
+    }
+
+    #fwtTemplatesList ul li a span {
+        display: block;
+        font-family: Arial;
+        padding: 5px 0px 0px;
+        width: 100%;
+    }
+
+    #fwtTemplatesList ul div {
+        left: 20px;
+        position: relative;
+    }
+
+    #fwtTemplatesList ul ul {
+        background-color: #808080;
+        height: 33px;
+        left: -17px;
+        padding: 0px 0px 0px 6px !important;
+        position: absolute;
+        top: -80px;
+        width: 214px;
+        list-style: outside none none;
+        margin: 0px;
+    }
+
+        #fwtTemplatesList ul ul li {
+            float: left;
+            margin: 0px;
+        }
+
+
+            #fwtTemplatesList ul ul li a {
+                padding: 0px 0px 0px;
+                font-family: Arial;
+            }
+
+            #fwtTemplatesList ul ul li a {
+                color: #FFF !important;
+                display: block;
+                font-size: 0.8em;
+                padding: 10px 0px 0px;
+                text-align: right;
+                text-decoration: none !important;
+                width: 70px;
+                margin-left: 15px;
+            }
+</style>
+<div id="fwtTemplatesList">
+    <ul id="fwtTopLinksX">
+        <li>
+            <a href="#" rel="nofollow">
+                Fashion
+            </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow">
+                Food And Drink
+            </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow">
+                Clothing
+            </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow">
+                Medical
+            </a>
+        </li>
+        <li>
+            <a href="#" rel="nofollow">
+                Vehicle
+            </a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/tshirtwebsitetemplate.jpg">
+                <span>
+                    Professional T-shirt
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Clothes store" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/21_17.jpg">
+                <span>
+                    Clothes store
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/33_15.jpg">
+                <span>
+                    T-Market
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/36_17.jpg">
+                <span>
+                    Shoes store
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/82_1.jpg">
+                <span>
+                    Protein product
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/86_1.jpg">
+                <span>
+                    Fresh foods
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/92_1.jpg">
+                <span>
+                    Car company
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/94_1.jpg">
+                <span>
+                    Juice-drink
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/95_1.jpg">
+                <span>
+                    All about Kitchen
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/cakewebsitetemplate.jpg">
+                <span>
+                    Ice-cream
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/cookingrecipewebtemplate.jpg">
+                <span>
+                    Food and recipes
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a data-ga-label="Hairstyle Salon" data-ga-action="Image Click" data-ga-category="Template" data-ga-event="click" href="/preview/hairstylesalon/" target="_blank">
+
+                <img width="220" height="250" alt="Hairstyle Salon" src="~/Assets/img/templates/sushihanii.jpg">
+                <span>
+                    Sushi restaurent
+                </span>
+            </a>
+            <div class="option">
+                <ul>
+                    <li>
+                        <a class="view" href="/preview/hairstylesalon/" target="_blank">
+                            <i class="fa fa-search"></i>
+                            View
+                        </a>
+                    </li>
+                    <li>
+                        <a class="design" href="#" target="_blank">
+                            <i class="fa fa-pencil"></i>
+                            Design
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>

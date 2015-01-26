@@ -137,6 +137,7 @@
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\User\Controllers\ProfileController.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Controllers\AllTemplatesController.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MapDomainController.cs" />
@@ -212,6 +213,20 @@
     <Content Include="Assets\img\stock\7.jpg" />
     <Content Include="Assets\img\stock\8.jpg" />
     <Content Include="Assets\img\stock\9.jpg" />
+    <Content Include="Assets\img\templates\21_17.jpg" />
+    <Content Include="Assets\img\templates\33_15.jpg" />
+    <Content Include="Assets\img\templates\36_17.jpg" />
+    <Content Include="Assets\img\templates\82_1.jpg" />
+    <Content Include="Assets\img\templates\86_1.jpg" />
+    <Content Include="Assets\img\templates\92_1.jpg" />
+    <Content Include="Assets\img\templates\94_1.jpg" />
+    <Content Include="Assets\img\templates\95_1.jpg" />
+    <Content Include="Assets\img\templates\cakewebsitetemplate.jpg" />
+    <Content Include="Assets\img\templates\cookingrecipewebtemplate.jpg" />
+    <Content Include="Assets\img\templates\lawfirm.jpg" />
+    <Content Include="Assets\img\templates\retrodiner.jpg" />
+    <Content Include="Assets\img\templates\sushihanii.jpg" />
+    <Content Include="Assets\img\templates\tshirtwebsitetemplate.jpg" />
     <Content Include="Assets\js\bootstrap\bootstrap.min.js" />
     <Content Include="Assets\js\bootstrap\holder.min.js" />
     <Content Include="Assets\js\demo.js" />
@@ -494,7 +509,7 @@
     <Content Include="Views\BuilderPage\BuilderPage.cshtml" />
     <Content Include="Views\ProductManagement\ProductManagement.cshtml" />
     <Content Include="Views\ProductManagement\AddProduct.cshtml" />
-    <Content Include="Views\MapDomain\MapDomain.cshtml" />
+    <Content Include="Views\AllTemplates\AllTemplates.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
