@@ -25,5 +25,10 @@ namespace SBPC_System.Areas.User.Controllers
         {
             return View();
         }
+
+        public ActionResult Statistic()
+        {
+            return View();
+        }
     }
 }
