@@ -250,13 +250,13 @@ var demoHighCharts = function () {
                             enabled: false
                         },
                         title: {
-                            text: null,
+                            text: "View per Page",
                         },
                         xAxis: {
                             lineWidth: 0,
                             tickLength: 6,
                             title: {
-                                text: null
+                                text: "abc"
                             },
                             labels: {
                                 enabled: true
@@ -269,10 +269,10 @@ var demoHighCharts = function () {
                             lineColor: '#EEE',
                             gridLineColor: '#EEE',
                             title: {
-                                text: null
+                                text: "xyz"
                             },
                             labels: {
-                                enabled: false,
+                                enabled: true,
                                 style: {
                                     fontWeight: '400'
                                 }
@@ -281,7 +281,7 @@ var demoHighCharts = function () {
                         tooltip: {
                             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                                '<td style="padding:0"><b>{point.y:.1f}000</b></td></tr>',
                             footerFormat: '</table>',
                             shared: true,
                             useHTML: true
@@ -292,13 +292,12 @@ var demoHighCharts = function () {
                             }
                         },
                         series: [{
-                            name: 'Tokyo',
-                            data: [12, 14, 20, 19, 8, 12,
-                                14, 20, 5, 16, 8, 12,
-                                14, 20, 19, 5, 16, 8,
-                                12, 14, 20, 19, 5, 16,
-                                8
-                            ]
+                            name: 'View',
+                            data: [12, 14, 20,
+                                19, 8, 12,
+                                14, 20, 5,
+                                16, 8, 12,
+                             ]
                         }]
                     });
 
@@ -690,23 +689,20 @@ var demoHighCharts = function () {
                             enabled: false,
                         },
                         series: [{
-                            name: 'Yahoo',
+                            name: "1 <i class='fa fa-star fs20 va-b'></i>",
                             data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
                         }, {
-                            name: 'CNN',
+                            name: "2 <i class='fa fa-star fs20 va-b'></i>",
                             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
                         }, {
-                            visible: false,
-                            name: 'Yahoo',
+                            name: "3 <i class='fa fa-star fs20 va-b'></i>",
                             data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
                         }, {
-                            visible: false,
-                            name: 'Facebook',
+                            name: "4 <i class='fa fa-star fs20 va-b'></i>",
                             data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
                         }, {
-                            visible: false,
-                            name: 'Facebook',
-                            data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3,13.9, 9.6]
+                            name: "5 <i class='fa fa-star fs20 va-b'></i>",
+                            data: [7.0, 6, 9, 14, 3, 1, 3.5, 8.4, 20.1, 14.1, 8.6, 2.5]
                         }, {
                             visible: false,
                             name: 'CNN',
@@ -724,8 +720,9 @@ var demoHighCharts = function () {
                 var pie1 = $('#high-pie');
                  
                 if (pie1.length) {
-
+                    //pie1.attr("heigh", "530px");
                     // Pie Chart1
+                    
                     $('#high-pie').highcharts({
                         credits: false,
                         chart: {
@@ -762,14 +759,14 @@ var demoHighCharts = function () {
                             type: 'pie',
                             name: 'Browser share',
                             data: [
-                                ['Firefox', 35.0],
-                                ['IE', 36.8], {
-                                    name: 'Chrome',
+                                ['4 stars', 35.0],
+                                ['3 starts', 36.8], {
+                                    name: '5 stars',
                                     y: 15.8,
                                     sliced: true,
                                     selected: true
                                 },
-                                ['Safari', 18.5],
+                                ['2 stars', 18.5],
                             ]
                         }]
                     });
