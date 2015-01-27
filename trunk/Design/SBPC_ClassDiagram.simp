@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="5.95" multi-file="no">
+  <meta>
+    <name>Project</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <management>
+    <persons>
+      <person id="Pbc6d7351b3504854baddfae3aeda20e6">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <tasks />
+    <requirements />
+    <issues />
+    <to-dos />
+  </management>
+  <glossary />
+  <types>
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="boolean" name="boolean" description="" />
+      <type id="Strings" name="Strings" description="" />
+      <type id="Integert" name="Integert" description="" />
+      <type id="Float" name="Float" description="" />
+    </custom-types>
+  </types>
+  <filters />
+  <items>
+    <item id="ddip409134468817449660_133404399551889882" cid="C001" type="class" name="Users" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="Pbc6d7351b3504854baddfae3aeda20e6" creation-date="01/27/2015 11:33:23">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute id="a3dd3a34f14924d2a92cd3a90c831e73180" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a0bdd241242b0406f8f49ba57583bc097639" name="Username" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a1648227d9f2f415080c95c0185490016122" name="Password" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="ad369281d975e4b5183996ed9e91af5e3389" name="Email" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a0a40c7e0e98e4faaaedee6da202266e1755" name="Role" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="o4feb10aca02f496696a994e81373c5f1477" name="IsValidUser" type="boolean" type-id="boolean" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="username" type="String" type-id="Uml.String" default-value="" />
+            <parameter id="" name="password" type="String" type-id="Uml.String" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o0053a2907b30467f972ab8be7d2a2acf569" name="RecoverForgottenPassword" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="username" type="String" type-id="Uml.String" default-value="" />
+            <parameter id="" name="email" type="String" type-id="Uml.String" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oc3a8ff5ac3ad4e4888c034897cabc118655" name="ChangePassword" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="username" type="String" type-id="Uml.String" default-value="" />
+            <parameter id="" name="password" type="String" type-id="Uml.String" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="ob9e1513badf24abd87737fa3eb55c1c8631" name="RegisterAccount" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="o1d4b14d8cded494e94894bb484ef5e1e551" name="NewOperation5" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+  </items>
+  <models>
+    <model id="p538228893869587996" name="Model 1" type="model" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>01/27/2015 11:33:18</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <tagged-values />
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-class" id="p409134468817449660" name="ClassDiagram1" order-index="1" show-nullability="false">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>01/27/2015 11:33:18</creation-date>
+          <change-date>01/27/2015 16:18:16</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values />
+        <abstract-items>
+          <item id="ddip409134468817449660_994570832903739493" cid="C001" type="class" name="AccountType" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 13:49:01">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a3fd6943ce9134cc894eb0a4921de1df1135" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a9eb1f4db2c854a1c861d09d2c197efda223" name="UserId" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="af9d1a01227fc4b0b8c906890ac027e9e61" name="Price" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a483ad00c18f3484ebe6417c06ad5d925617" name="ProductLimit" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aca356cbf470f420f841d25990436c4fc627" name="SiteLimit" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="abc3807e057554e46a2fb0d1750397f60403" name="TypeName" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o752c076b03694e48af7ba03b0ebbe250809" name="UpgradeAccount" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="username" type="String" type-id="Uml.String" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_958843573279894874" cid="C002" type="class" name="Theme" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:13:24">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="ac33f4fdc376449f38557cf9e9486c4d7248" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aa3fdccf4c9b9420996cc064e636f6c64295" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a91083c1a86654b308899758bce2a6c12688" name="Style" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a24791b8d1c9646519685eee3218b3625400" name="Color" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a294e36ea35ee49e998a4e7144f07c236169" name="CssFileURL" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o65db8cec7b384f0f92fd3cf28f7c1009212" name="Insert" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="ode30c48556764483b57291df421a6e4f604" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o0b70dd4704154087b41d0a14195c1ed7989" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="ThemeId" type="Integert" type-id="Integert" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_365987848235913921" cid="C003" type="class" name="Website" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:18:16">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a99a2aa5090e5416a898875da50899b1a148" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="ae1ee25774c564aada61bbf003402bfc2428" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a3a3c9c4b38694a85a5acb848640d9ed9771" name="URL" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a1f66450358c943d1a65a369935869a5f115" name="TitleSize" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a7760929f467d490d90d69f68cf70f491275" name="TitleColor" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a0f13c07ee2fd4993b4c3d2685f713c99539" name="HeaderSize" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aa879a693d1fb4c0e875a70064688b399828" name="NavigateMenuSize" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="ad9f477acf2784addbe5f7ce6dc1857d6528" name="BackgroundImage" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a34e0433f755e4c8f9dcdfe8c7dafe7af754" name="FaviconImage" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o04a8e4eee3c24fd9aa861dd4c6f53ac4731" name="SaveUserSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o71369e8943eb4415812db6ae91730615348" name="RemoveSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oc40e4929533948bfa39ab2d1c3464da9845" name="UpdateSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="ddip409134468817449660_133404399551889882" iid="1f3b6bb833854dc897b40a8d440d8f16" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 11:33:23" order-index="0" type="entity">
+            <layout ax="10" ay="20" awidth="400" aheight="180" x="10" y="20" width="400" height="180" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_994570832903739493" iid="2f4df540c36b4d75956a55cb9785f34c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 13:49:01" order-index="1" type="entity">
+            <layout ax="30" ay="270" awidth="240" aheight="160" x="30" y="270" width="240" height="160" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_958843573279894874" iid="96b57b8f25804768bd4558a1dd7096fb" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 16:13:24" order-index="2" type="entity">
+            <layout ax="300" ay="330" awidth="210" aheight="180" x="300" y="330" width="210" height="180" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_365987848235913921" iid="bca04d42021a41828d84e2a4bf96f40d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 16:18:16" order-index="3" type="entity">
+            <layout ax="460" ay="10" awidth="240" aheight="230" x="460" y="10" width="240" height="230" angle="0" />
+            <class />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+  <documents />
+  <document-templates />
+</sim-project>
