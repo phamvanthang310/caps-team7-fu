@@ -159,6 +159,7 @@
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\adminpanels.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\jquery.ui.touch-punch.min.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\json2.js" />
+    <Content Include="Assets\css\main.css" />
     <Content Include="Assets\fonts\font-awesome\fontawesome-webfont78ce.svg" />
     <Content Include="Assets\fonts\glyphicons-pro\glyphicons-regular.svg" />
     <Content Include="Assets\fonts\glyphicons\glyphicons-halflings-regular.svg" />
@@ -211,6 +212,7 @@
     <Content Include="Assets\js\bootstrap\bootstrap.min.js" />
     <Content Include="Assets\js\bootstrap\holder.min.js" />
     <Content Include="Assets\js\demo.js" />
+    <Content Include="Assets\css\editor.css" />
     <Content Include="Assets\js\main.js" />
     <Content Include="Assets\js\pages\charts\d3.js" />
     <Content Include="Assets\js\pages\charts\flot.js" />
@@ -317,6 +319,10 @@
     <Content Include="Areas\User\Views\Profile\Upgrade.cshtml" />
     <Content Include="Areas\User\Views\Profile\SiteManagement.cshtml" />
     <Content Include="Areas\User\Views\Profile\Statistic.cshtml" />
+    <Content Include="Areas\Admin\Views\Dashboard\Dashboard.cshtml" />
+    <Content Include="Areas\Admin\Views\Account\Account.cshtml" />
+    <Content Include="Areas\Admin\Views\Template\Template.cshtml" />
+    <Content Include="Areas\Admin\Views\User\User.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -487,6 +493,7 @@
     <Content Include="Views\ProductManagement\ProductManagement.cshtml" />
     <Content Include="Views\ProductManagement\AddProduct.cshtml" />
     <Content Include="Views\Shared\User\_UserLayout.cshtml" />
+    <Content Include="Views\Shared\BuilderPage\_RightMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

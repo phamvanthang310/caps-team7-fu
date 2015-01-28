@@ -1,0 +1,373 @@
+﻿
+<style>
+    .section-outer {
+        display: table-row;
+    }
+
+    .section {
+        display: table-cell;
+        height: 1px;
+    }
+
+    .color-squares {
+        text-align: center;
+    }
+
+    .section-inner {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .color-square {
+        display: inline-block;
+        vertical-align: middle;
+        border: 1px solid #2D3032;
+        border-radius: 3px;
+        box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.7) inset;
+        background-color: rgba(127, 127, 127, 0.1);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+    }
+
+    .color-square {
+        vertical-align: top;
+        margin: 2px 3px 2px 4px;
+        cursor: pointer;
+    }
+</style>
+
+<aside class="tray tray-right tray320 va-t pn" data-tray-height="match" style="height: 2300px;">
+
+    <div class="ph15" data-animate="[" 1200","fadeindown"]">
+
+        <div class="row mb20">
+            <div class="col-xs-4 pr5">
+                <a class="btn btn-block ph5 br0 animation-nav btn-default btn-primary" data-toggle="tab" href="#form-tab3">
+
+                    Build
+
+                </a>
+
+            </div>
+            <div class="col-xs-4 pr5">
+
+                <a class="btn btn-default btn-block ph5 br0 animation-nav" data-toggle="tab" href="#form-tab1">
+
+                    Design
+
+                </a>
+
+            </div>
+            <div class="col-xs-4 ph5">
+
+                <a class="btn btn-default btn-block ph5 br0 animation-nav" data-toggle="tab" href="#form-tab2">
+
+                    Pages
+
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="" data-animate="[" 600","slideinup"]">
+
+        <div class="tray-bin p20 alt-btns-hover br-h-n mn">
+            <div class="tab-content pn br-n bg-none admin-form-list">
+                <div id="form-tab1" class="tab-pane">
+                    <div id="w-editor-left" class="w-sidebar w-ui">
+
+                        <div id="w-design" class="" style="">
+                            <div id="w-design-main">
+                                <div class="content">
+                                    <div class="content-inner">
+                                        <div class="section-outer">
+                                            <div class="section color-squares">
+                                                <div class="section-inner">
+                                                    <span class="color-square selected" style="background-color:#5199a8">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#ff9a22">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#f64c3f">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#ff7f6e">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#52ae8c">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#5b72dc">
+
+                                                        <span></span>
+
+                                                    </span>
+                                                    <span class="color-square" style="background-color:#dea227">
+
+                                                        <span></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="section-outer">
+
+                                            <div class="section">
+                                                <div class="section-inner">
+                                                    <button id="change-theme-button" class="btn-edit btn-control btn-block-edit btn-forward">
+
+
+                                                        Change Theme
+
+                                                        <span class="caret"></span>
+
+                                                    </button>
+                                                    <button id="change-fonts-button" class="btn-edit btn-control btn-block-edit btn-forward">
+
+
+                                                        Change Fonts
+
+                                                        <span class="caret"></span>
+
+                                                    </button>
+                                                    <button id="change-background-button" class="btn-edit btn-control btn-block-edit btn-forward">
+
+
+                                                        Change Background
+
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="section-outer" style="display: none;">
+
+                                            <div class="section area-toggles">
+                                                <div class="section-inner"></div>
+
+                                            </div>
+                                        </div>
+                                        <div class="section-outer">
+                                            <div class="section empty-section">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="form-tab2" class="tab-pane">
+
+                    <ul id="form-list2" class="nav list-unstyled" role="tablist">
+                        <li class="nav-label mtn">
+
+                            Contact Forms
+
+                        </li>
+                        <li>
+                            <a class="btn-edit btn-info btn-gradient btn-alt btn-block-edit" data-toggle="tab" role="tab" href="#contact1" aria-expanded="false">
+
+                                Contact 1
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a class="btn-edit btn-info btn-gradient btn-alt btn-block-edit" data-toggle="tab" role="tab" href="#contact2" aria-expanded="false">
+
+                                Contact 2
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a class="btn-edit btn-info btn-gradient btn-alt btn-block-edit" data-toggle="tab" role="tab" href="#contact3" aria-expanded="false">
+
+                                Contact 3
+
+                            </a>
+
+                        </li>
+                        <li class="nav-label">
+
+                            Comment Forms
+
+                        </li>
+                        <li>
+
+                            <a class="btn-edit btn-primary btn-gradient btn-alt btn-block-edit" data-toggle="tab" role="tab" href="#comment1" aria-expanded="false">
+
+                                Comment 1
+
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a class="btn-edit btn-primary btn-gradient btn-alt btn-block-edit" data-toggle="tab" role="tab" href="#comment2" aria-expanded="false">
+
+                                Comment 2
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div id="form-tab3" class="tab-pane active">
+                    <div class="row">
+                        <div id="" class="builder-element-container scroll">
+                            <div class=" builder-element-pick">
+                                Basic
+                            </div>
+                            <div class="row mr10 ml10 mt20  text-center">
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-image">
+                                        <span class="fa fa-picture-o fs40 holder-icon"></span>
+                                        <br> Image
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ui-draggable">
+                                    <a class="holder-style p15 mb20 ui-draggable" href="#modal-text">
+                                        <span class="fa fa-text-height fs40 holder-icon"></span>
+                                        <br> Title
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-form">
+                                        <span class="glyphicons glyphicons-align_left fs40 holder-icon"></span>
+                                        <br> Text
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-panel">
+                                        <span class="glyphicons glyphicons-google_maps fs40 holder-icon"></span>
+                                        <br> Map
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p10 mb20" href="#modal-video" style="line-height: 14px">
+                                        <span class="fa fa-list-alt fs40 holder-icon"></span>
+                                        <br /> Contact Form
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                                        <span class="glyphicons glyphicons-magic fs40 holder-icon"></span>
+                                        <br> Slide Show
+                                    </a>
+                                </div>
+                            </div>
+                            <div class=" builder-element-pick">
+                                Structure
+                            </div>
+                            <div class="row mr10 ml10 mt20 text-center">
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-image">
+                                        <span class="glyphicons glyphicons-vector_path_square fs40 holder-icon"></span>
+                                        <br> Spacer
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-text">
+                                        <span class="glyphicons glyphicons-vector_path_line  fs40 holder-icon"></span>
+                                        <br> Divider
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-form">
+                                        <span class="glyphicons glyphicons-macbook fs40 holder-icon"></span>
+                                        <br> Button
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-panel">
+                                        <span class="glyphicons glyphicons-search fs40 holder-icon"></span>
+                                        <br> Search Box
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class=" builder-element-pick">
+                                Products
+                            </div>
+                            <div class="row mr10 ml10 mt20 text-center">
+
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p15 mb20" href="#modal-video">
+                                        <span class="glyphicons glyphicons-show_thumbnails fs40 holder-icon"></span>
+                                        <br> Grib View
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                                        <span class="glyphicons glyphicons-show_thumbnails_with_lines fs40 holder-icon"></span>
+                                        <br> List View
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class=" builder-element-pick">
+                                Media
+                            </div>
+                            <div class="row mr10 ml10 mt20 text-center">
+                                <div class="col-md-6">
+                                    <a class="holder-style p15  mb20" href="#modal-image">
+                                        <span class="fa fa-picture-o fs40 holder-icon"></span>
+                                        <br> Image
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-text">
+                                        <span class="fa fa-text-height fs40 holder-icon"></span>
+                                        <br> Text
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-form">
+                                        <span class="fa fa-pencil-square-o fs40 holder-icon"></span>
+                                        <br> Form
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="holder-style p15 mb20" href="#modal-panel">
+                                        <span class="fa fa-map-marker fs40 holder-icon"></span>
+                                        <br> Panel
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p15 mb20" href="#modal-video">
+                                        <span class="fa fa-film fs40 holder-icon"></span>
+                                        <br> Video
+                                    </a>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <a class="holder-style p15 mb20" href="#modal-ajax">
+                                        <span class="fa fa-spinner fs40 holder-icon"></span>
+                                        <br> Ajax
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</aside>
