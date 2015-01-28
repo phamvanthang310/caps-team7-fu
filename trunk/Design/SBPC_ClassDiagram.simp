@@ -32,6 +32,9 @@
       <type id="Strings" name="Strings" description="" />
       <type id="Integert" name="Integert" description="" />
       <type id="Float" name="Float" description="" />
+      <type id="Integerr" name="Integerr" description="" />
+      <type id="Integer)" name="Integer)" description="" />
+      <type id="Datetime" name="Datetime" description="" />
     </custom-types>
   </types>
   <filters />
@@ -99,6 +102,68 @@
         <source-codes />
       </template-parameters>
     </item>
+    <item id="ddip409134468817449660_320106726306096596" cid="C001" type="class" name="Layout" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 00:56:40">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes>
+        <attribute id="a0e63dfc2ef7d4158b354ba4c66bf85b4199" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="ab1fe9a4fa8c0409289e47b6e3cfa3a71412" name="Header" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a14f44c2aecd24722838595d41c90476e657" name="Footer" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a058b7124029546278e8cdf82985f1d20131" name="LeftPanelWidth" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="af3909bdacff5452494381c75fe1ea538505" name="RightPanelWidth" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+        <attribute id="a89e0919700004b75b131cb1e2830e6c3301" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+          <stereotypes />
+        </attribute>
+      </attributes>
+      <operations>
+        <operation id="ocf9c909d51fb454a83bb23c9d9daa410904" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="oe349523fefef40f1a3d92facf92573fb355" name="Insert" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters />
+          <stereotypes />
+          <source-codes />
+        </operation>
+        <operation id="ob873f515777b4666aa93f68e2a72e6e0401" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+          <parameters>
+            <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+          </parameters>
+          <stereotypes />
+          <source-codes />
+        </operation>
+      </operations>
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="ddip409134468817449660_607164638810574142" cid="REL015" type="relationship" name="belong to" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:37:46">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="ddip409134468817449660_312523672121231992" to="ddip409134468817449660_810197616122448671">
+        <start-role id="" name="" multiplicity="0..*" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" multiplicity="1" navigability="" association-type="aggregation" visibility="private" />
+      </relation>
+    </item>
   </items>
   <models>
     <model id="p538228893869587996" name="Model 1" type="model" namespace="" order-index="1">
@@ -127,13 +192,13 @@
           </authors>
           <description />
           <creation-date>01/27/2015 11:33:18</creation-date>
-          <change-date>01/27/2015 16:18:16</change-date>
+          <change-date>01/29/2015 01:55:42</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <tagged-values />
         <abstract-items>
-          <item id="ddip409134468817449660_994570832903739493" cid="C001" type="class" name="AccountType" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 13:49:01">
+          <item id="ddip409134468817449660_994570832903739493" cid="C001" type="class" name="AccountType" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 13:49:01">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -172,7 +237,7 @@
               <source-codes />
             </template-parameters>
           </item>
-          <item id="ddip409134468817449660_958843573279894874" cid="C002" type="class" name="Theme" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:13:24">
+          <item id="ddip409134468817449660_958843573279894874" cid="C002" type="class" name="Theme" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:13:24">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -202,13 +267,15 @@
                 <source-codes />
               </operation>
               <operation id="ode30c48556764483b57291df421a6e4f604" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
-                <parameters />
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
                 <stereotypes />
                 <source-codes />
               </operation>
               <operation id="o0b70dd4704154087b41d0a14195c1ed7989" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
                 <parameters>
-                  <parameter id="" name="ThemeId" type="Integert" type-id="Integert" default-value="" />
+                  <parameter id="" name="ID" type="Integer" type-id="Uml.Integer" default-value="" />
                 </parameters>
                 <stereotypes />
                 <source-codes />
@@ -218,7 +285,7 @@
               <source-codes />
             </template-parameters>
           </item>
-          <item id="ddip409134468817449660_365987848235913921" cid="C003" type="class" name="Website" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:18:16">
+          <item id="ddip409134468817449660_365987848235913921" cid="C003" type="class" name="Website" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/27/2015 16:18:16">
             <stereotypes />
             <tagged-values />
             <associated-diagrams />
@@ -254,18 +321,22 @@
               </attribute>
             </attributes>
             <operations>
-              <operation id="o04a8e4eee3c24fd9aa861dd4c6f53ac4731" name="SaveUserSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+              <operation id="o04a8e4eee3c24fd9aa861dd4c6f53ac4731" name="SaveSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
                 <parameters />
                 <stereotypes />
                 <source-codes />
               </operation>
               <operation id="o71369e8943eb4415812db6ae91730615348" name="RemoveSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
-                <parameters />
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
                 <stereotypes />
                 <source-codes />
               </operation>
               <operation id="oc40e4929533948bfa39ab2d1c3464da9845" name="UpdateSite" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
-                <parameters />
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
                 <stereotypes />
                 <source-codes />
               </operation>
@@ -274,23 +345,449 @@
               <source-codes />
             </template-parameters>
           </item>
+          <item id="ddip409134468817449660_662443497288161721" cid="C003" type="class" name="Page" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:03:16">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a96c50a79df934930b7c50c626003d7a5698" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a56ba14f95e89496cb8e16fcfced84193270" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="ae3005b02e2aa4b6d85d5516890c14859439" name="Title" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aed8d6a28cc7f494ca8b16db3d4ab7ec7758" name="Header" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a2b0b216c14654d7b8d4def1afabce8e3230" name="HtmlFile" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="o83582c1a338244a98eb776d09d342076321" name="Add" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o73789854b7bd4f6e8562e35dd82e35cd758" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o444f4ff7664c47b5b15fc1ddc18951e1383" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_810197616122448671" cid="C005" type="class" name="Category" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:09:09">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="afe3d335deabd4a05a9fd49ba7e302842856" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a43faef113d1447f0af652be4d2d54b1a957" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a3f89ad44ee2349099588554b73d805f9765" name="Price" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="af6ac0b58c7d043228c2d123109177dec796" name="SellingPrice" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a370e5ad18e5341999c49bca86201f12a780" name="Description" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="af11b2274c98840bfbd5666b039b0a552783" name="NewAttribute6" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="ob6123bc09d684f74a32767a8b4108287136" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integerr" type-id="Integerr" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o39937335632b474681c9edc96c56e35b447" name="Insert" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="oa77fe5ac024e434dab33952d82a43452679" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_312523672121231992" cid="C004" type="class" name="Product" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:05:48">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="aef00c3ee4c614ed98ad26d3ab3358226809" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a8cb9cf66d7b44eb2b25f13aa0d44a262245" name="Name" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="ad1b1285e27a74f66ad64a76deed81d84806" name="Price" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aabca0299ee914ec2ac53bb20078747fc989" name="SellingPrice" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a2fea5ce20b4d48f0b8231117f36fe465926" name="Description" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a25af91bf05174dc289c72685f13a2fa3629" name="MediaId" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a23da75da3a3940c2ade330bfea9bf8ef62" name="CategoryId" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="af4b3c9d0eabd4a3abde6abd3e3a78e8a418" name="CreatedDate" type="Datetime" type-id="Datetime" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aa0db4b9bb30a4ce383af8808f6c765d3292" name="UpdatedDate" type="Datetime" type-id="Datetime" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="ofe47dfd3e7eb471481d3d710404201dc377" name="Insert" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o64dd94443aa44f1687b57497bac6d5fe565" name="Update" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+              <operation id="o8b9b04f540724edc84026700175b3160900" name="Remove" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters>
+                  <parameter id="" name="Id" type="Integer" type-id="Uml.Integer" default-value="" />
+                </parameters>
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_933233634657069132" cid="C006" type="class" name="Media" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:10:46">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a8d4e86eec85d49979e67243b650e9d7c855" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a5fb02ffc11aa4d55a7046c07163cc3c4435" name="Url" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aef6da3fa8b02484fa87aafb652c5fc11756" name="Type" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_661466995642003016" cid="C007" type="class" name="Column" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:13:00">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a3c154e559ea944de88642813e80b4d8b486" name="Id" type="Integer" type-id="Uml.Integer" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="a72106dcf2ce5463984cf9d814e692b65619" name="Position" type="String" type-id="Uml.String" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+              <attribute id="aa91e6aec5abc4a0ca5b3388378182eb4452" name="WidthPercent" type="Float" type-id="Float" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+              </attribute>
+            </attributes>
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="ddip409134468817449660_900902651804654110" cid="REL001" type="relationship" name="belong to" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:18:48">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_661466995642003016" to="ddip409134468817449660_320106726306096596">
+              <start-role id="" name="" multiplicity="1..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="composition" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_304103174425019570" cid="REL012" type="relationship" name="create" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:31:55">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_133404399551889882" to="ddip409134468817449660_365987848235913921">
+              <start-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_929808267623154731" cid="REL013" type="relationship" name="import" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:34:04">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_133404399551889882" to="ddip409134468817449660_958843573279894874">
+              <start-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_142598433769858277" cid="REL014" type="relationship" name="belong to" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:35:57">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_810197616122448671" to="ddip409134468817449660_365987848235913921">
+              <start-role id="" name="" multiplicity="0..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..1" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_591082716197948257" cid="REL017" type="relationship" name="have" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:39:09">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_312523672121231992" to="ddip409134468817449660_933233634657069132">
+              <start-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_314682275299768819" cid="REL018" type="relationship" name="have" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:41:19">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_810197616122448671" to="ddip409134468817449660_933233634657069132">
+              <start-role id="" name="" multiplicity="0..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_166507171850529311" cid="REL038" type="relationship" name="belong to" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:44:41">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_662443497288161721" to="ddip409134468817449660_320106726306096596">
+              <start-role id="" name="" multiplicity="0..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="1" navigability="" association-type="composition" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_766496884272069946" cid="REL042" type="relationship" name="have" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:52:29">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_365987848235913921" to="ddip409134468817449660_662443497288161721">
+              <start-role id="" name="" multiplicity="1..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="1..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
+          <item id="ddip409134468817449660_452211317676908187" cid="REL041" type="relationship" name="have" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="01/29/2015 01:47:17">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="ddip409134468817449660_994570832903739493" to="ddip409134468817449660_133404399551889882">
+              <start-role id="" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="0..*" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="ddip409134468817449660_133404399551889882" iid="1f3b6bb833854dc897b40a8d440d8f16" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 11:33:23" order-index="0" type="entity">
-            <layout ax="10" ay="20" awidth="400" aheight="180" x="10" y="20" width="400" height="180" angle="0" />
+            <layout ax="-20" ay="-50" awidth="390" aheight="180" x="-20" y="-50" width="390" height="180" angle="0" />
             <class />
           </item>
           <item id="ddip409134468817449660_994570832903739493" iid="2f4df540c36b4d75956a55cb9785f34c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 13:49:01" order-index="1" type="entity">
-            <layout ax="30" ay="270" awidth="240" aheight="160" x="30" y="270" width="240" height="160" angle="0" />
+            <layout ax="-40" ay="240" awidth="240" aheight="160" x="-40" y="240" width="240" height="160" angle="0" />
             <class />
           </item>
           <item id="ddip409134468817449660_958843573279894874" iid="96b57b8f25804768bd4558a1dd7096fb" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 16:13:24" order-index="2" type="entity">
-            <layout ax="300" ay="330" awidth="210" aheight="180" x="300" y="330" width="210" height="180" angle="0" />
+            <layout ax="210" ay="350" awidth="210" aheight="170" x="210" y="350" width="210" height="170" angle="0" />
             <class />
           </item>
           <item id="ddip409134468817449660_365987848235913921" iid="bca04d42021a41828d84e2a4bf96f40d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/27/2015 16:18:16" order-index="3" type="entity">
-            <layout ax="460" ay="10" awidth="240" aheight="230" x="460" y="10" width="240" height="230" angle="0" />
+            <layout ax="540" ay="-50" awidth="240" aheight="240" x="540" y="-50" width="240" height="240" angle="0" />
             <class />
+          </item>
+          <item id="ddip409134468817449660_320106726306096596" iid="d8947cbc58544eb8bf434c9e9e1e706d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 00:56:40" order-index="4" type="entity">
+            <layout ax="470" ay="320" awidth="170" aheight="190" x="470" y="320" width="170" height="190" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_662443497288161721" iid="5d369c8a57da4d1aabbf9bdcdf3b36ef" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:03:16" order-index="5" type="entity">
+            <layout ax="250" ay="140" awidth="140" aheight="170" x="250" y="140" width="0" height="170" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_312523672121231992" iid="315ba265cdfe4c0f8e9584d71f0205fd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:05:48" order-index="6" type="entity">
+            <layout ax="900" ay="210" awidth="160" aheight="240" x="900" y="210" width="160" height="240" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_810197616122448671" iid="366a6396c1594676b40a8f71f33c34c1" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:09:09" order-index="7" type="entity">
+            <layout ax="890" ay="-40" awidth="120" aheight="180" x="890" y="-40" width="120" height="180" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_933233634657069132" iid="428a368b68534cd19617906ceec8512a" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:10:46" order-index="8" type="entity">
+            <layout ax="680" ay="250" awidth="140" aheight="120" x="680" y="250" width="0" height="120" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_661466995642003016" iid="5c2248ddb8e34458972f9210b3cf59aa" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:13:00" order-index="9" type="entity">
+            <layout ax="750" ay="390" awidth="140" aheight="120" x="750" y="390" width="0" height="120" angle="0" />
+            <class />
+          </item>
+          <item id="ddip409134468817449660_900902651804654110" iid="35d5f1e756e84d40a4f814e850d979bc" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:18:48" order-index="10" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="0,20" x1="750" y1="441" x2="640" y2="426" start-border-pos="0.85573902130127" end-border-pos="0.389771591989618">
+              <points>
+                <point x="750" y="441" />
+                <point x="640" y="426" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_661466995642003016" from-iid="5c2248ddb8e34458972f9210b3cf59aa" to="ddip409134468817449660_320106726306096596" to-iid="d8947cbc58544eb8bf434c9e9e1e706d" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="22.20083,5.303127" end-multiplicity="27.82114,-10.48733" />
+          </item>
+          <item id="ddip409134468817449660_304103174425019570" iid="81950d071f3d42b7a53c2d7f3bd043a3" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:31:55" order-index="12" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="370" y1="52" x2="540" y2="63" start-border-pos="0.391752576828003" end-border-pos="0.867268041769663">
+              <points>
+                <point x="370" y="52" />
+                <point x="540" y="63" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_133404399551889882" from-iid="1f3b6bb833854dc897b40a8d440d8f16" to="ddip409134468817449660_365987848235913921" to-iid="bca04d42021a41828d84e2a4bf96f40d" />
+            <role-positions start-role="25,15" end-role="20.35962,16.56762" start-multiplicity="19.69548,-14.42526" end-multiplicity="30.35732,16.35339" />
+          </item>
+          <item id="ddip409134468817449660_929808267623154731" iid="e2d72558c5b54125b98f014374303fd2" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:34:04" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="207" y1="130" x2="285" y2="350" start-border-pos="0.64544790219038" end-border-pos="0.089135015578497">
+              <points>
+                <point x="207" y="130" />
+                <point x="285" y="350" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_133404399551889882" from-iid="1f3b6bb833854dc897b40a8d440d8f16" to="ddip409134468817449660_958843573279894874" to-iid="96b57b8f25804768bd4558a1dd7096fb" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25,-15" end-multiplicity="11.19999,18.40001" />
+          </item>
+          <item id="ddip409134468817449660_142598433769858277" iid="70cdc7b3d54e49f7bba2c2e8307eb577" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:35:57" order-index="14" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,10" x1="890" y1="54" x2="780" y2="62" start-border-pos="0.880747127532959" end-border-pos="0.366379308700562">
+              <points>
+                <point x="890" y="54" />
+                <point x="780" y="62" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_810197616122448671" from-iid="366a6396c1594676b40a8f71f33c34c1" to="ddip409134468817449660_365987848235913921" to-iid="bca04d42021a41828d84e2a4bf96f40d" />
+            <role-positions start-role="20.55527,16.32425" end-role="25,15" start-multiplicity="10.56076,16.65744" end-multiplicity="29.51695,-14.99166" />
+          </item>
+          <item id="ddip409134468817449660_591082716197948257" iid="065b6f90f49f46c18224a4cd0968ba4b" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:39:09" order-index="16" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="0,10" x1="900" y1="323" x2="820" y2="316" start-border-pos="0.867753632863363" end-border-pos="0.387681134541829">
+              <points>
+                <point x="900" y="323" />
+                <point x="820" y="316" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_312523672121231992" from-iid="315ba265cdfe4c0f8e9584d71f0205fd" to="ddip409134468817449660_933233634657069132" to-iid="428a368b68534cd19617906ceec8512a" />
+            <role-positions start-role="25,15" end-role="22.01589,22.1653" start-multiplicity="11.09512,12.07884" end-multiplicity="8.567242,-16.81078" />
+          </item>
+          <item id="ddip409134468817449660_314682275299768819" iid="5f6c629c69b74d2d80ae6a2209fee9c2" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:41:19" order-index="17" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="-20,-20" x1="890" y1="128" x2="796" y2="250" start-border-pos="0.983333333333333" end-border-pos="0.207417624337333">
+              <points>
+                <point x="890" y="128" />
+                <point x="796" y="250" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_810197616122448671" from-iid="366a6396c1594676b40a8f71f33c34c1" to="ddip409134468817449660_933233634657069132" to-iid="428a368b68534cd19617906ceec8512a" />
+            <role-positions start-role="27.81583,16.44018" end-role="25,15" start-multiplicity="27.81583,16.44018" end-multiplicity="26.20558,-15.14158" />
+          </item>
+          <item id="ddip409134468817449660_166507171850529311" iid="57c7be26679a45c0a70125837a5ea72d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:44:41" order-index="18" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="390" y1="282" x2="470" y2="346" start-border-pos="0.458229020062615" end-border-pos="0.78457444843493">
+              <points>
+                <point x="390" y="282" />
+                <point x="470" y="346" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_662443497288161721" from-iid="5d369c8a57da4d1aabbf9bdcdf3b36ef" to="ddip409134468817449660_320106726306096596" to-iid="d8947cbc58544eb8bf434c9e9e1e706d" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="25,-15" end-multiplicity="24.80288,-14.6225" />
+          </item>
+          <item id="ddip409134468817449660_452211317676908187" iid="3974ee9ed2f74f0dbf4eb0e92bf40519" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:47:17" order-index="20" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,0" x1="107" y1="240" x2="144" y2="130" start-border-pos="0.153273812929789" end-border-pos="0.605425819983849">
+              <points>
+                <point x="107" y="240" />
+                <point x="144" y="130" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_994570832903739493" from-iid="2f4df540c36b4d75956a55cb9785f34c" to="ddip409134468817449660_133404399551889882" to-iid="1f3b6bb833854dc897b40a8d440d8f16" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="16.7063,17.46137" end-multiplicity="26.0033,-16.51752" />
+          </item>
+          <item id="ddip409134468817449660_766496884272069946" iid="a1fe85064b9c4403afd872e5b011b0c0" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:52:29" order-index="21" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="-10,-20" x1="540" y1="125" x2="390" y2="193" start-border-pos="0.931985290845235" end-border-pos="0.328070943495807">
+              <points>
+                <point x="540" y="125" />
+                <point x="390" y="193" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_365987848235913921" from-iid="bca04d42021a41828d84e2a4bf96f40d" to="ddip409134468817449660_662443497288161721" to-iid="5d369c8a57da4d1aabbf9bdcdf3b36ef" />
+            <role-positions start-role="25,15" end-role="25,15" start-multiplicity="30.60517,-15.72653" end-multiplicity="25,-15" />
+          </item>
+          <item id="ddip409134468817449660_607164638810574142" iid="5ceef304c8a640268528e9269044f640" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="01/29/2015 01:37:46" order-index="15" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="-30,0" x1="967" y1="210" x2="960" y2="140" start-border-pos="0.104910755157471" end-border-pos="0.645089340209961">
+              <points>
+                <point x="967" y="210" />
+                <point x="960" y="140" />
+              </points>
+            </layout>
+            <relation from="ddip409134468817449660_312523672121231992" from-iid="315ba265cdfe4c0f8e9584d71f0205fd" to="ddip409134468817449660_810197616122448671" to-iid="366a6396c1594676b40a8f71f33c34c1" />
+            <role-positions start-role="16.61703,-65.67248" end-role="28.85608,12.93547" start-multiplicity="10,20" end-multiplicity="21.89082,-17.91067" />
           </item>
         </layer>
       </diagram>
