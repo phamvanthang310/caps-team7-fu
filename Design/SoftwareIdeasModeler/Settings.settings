@@ -15,7 +15,7 @@
   <InstallDate>
   </InstallDate>
   <LayoutBarY>0</LayoutBarY>
-  <LayoutBarX>591</LayoutBarX>
+  <LayoutBarX>589</LayoutBarX>
   <ToolboxWidth>190</ToolboxWidth>
   <DiagramBackgroundColor1>White</DiagramBackgroundColor1>
   <DiagramBackgroundColor2>255, 192, 128</DiagramBackgroundColor2>
@@ -51,14 +51,14 @@
   <UserEmail>
   </UserEmail>
   <DontUseCtrlAltShortcutKeys>False</DontUseCtrlAltShortcutKeys>
-  <RunCounter>63</RunCounter>
+  <RunCounter>64</RunCounter>
   <ShowMultipleUsage>True</ShowMultipleUsage>
   <ShowGrid>True</ShowGrid>
   <ShowAssignedDiagrams>True</ShowAssignedDiagrams>
   <IsCommercialUse>False</IsCommercialUse>
   <PropertiesDialogDefaultSize>528, 501</PropertiesDialogDefaultSize>
-  <SideBarSplitterY>0.68196202531645567</SideBarSplitterY>
-  <OpenFilePath>E:\CP</OpenFilePath>
+  <SideBarSplitterY>0.68088467614533965</SideBarSplitterY>
+  <OpenFilePath>D:\Project\Design</OpenFilePath>
   <RecentFilesInMenu>15</RecentFilesInMenu>
   <DefaultDiagramBackgroundColor2>White</DefaultDiagramBackgroundColor2>
   <DefaultDiagramBackgroundColor1>White</DefaultDiagramBackgroundColor1>
@@ -73,7 +73,7 @@
   <ImageSaveType>EmbedImage</ImageSaveType>
   <DefaultSourceCodeLanguage>Cpp</DefaultSourceCodeLanguage>
   <SnapToGrid>True</SnapToGrid>
-  <SideBarWidth>284</SideBarWidth>
+  <SideBarWidth>57</SideBarWidth>
   <DefaultSourceCodeTemplate>Default</DefaultSourceCodeTemplate>
   <StandardBarX>3</StandardBarX>
   <StandardBarY>0</StandardBarY>
