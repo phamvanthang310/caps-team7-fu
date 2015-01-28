@@ -14,10 +14,14 @@
 
     <link href="~/Assets/js/utility/highlight/styles/googlecode.css" type="text/css" rel="stylesheet">
 
+    
+
     <!-- Theme CSS -->
     <link href="~/Assets/skin/default_skin/css/theme.css" rel="stylesheet" />
     <!-- Admin Forms CSS -->
     <link href="~/Assets/admin-tools/admin-forms/css/admin-forms.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="~/Assets/admin-tools/admin-plugins/admin-modal/adminmodal.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="~/Assets/img/favicon.ico">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -257,10 +261,10 @@
             </header>*@
             <!-- End: Topbar -->
             <!-- Begin: Content -->
-            <section id="content" class="table-layout">
+            @*<section id="content" class="table-layout">*@
                 @RenderBody()
                 <!-- End: Content -->
-            </section>
+            @*</section>*@
         </section>
     </div>
     <!-- End: Main -->
@@ -281,10 +285,9 @@
     <script src="~/Vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
 
-
     <script type="text/javascript" src="~/Vendor/plugins/highcharts/highcharts.js"></script>
 
-
+    <script src="~/Vendor/plugins/magnific/jquery.magnific-popup.js"></script>
 
     <!-- Bootstrap -->
     <script src="~/Assets/js/bootstrap/bootstrap.min.js"></script>
@@ -304,6 +307,15 @@
 
             $('.tray-nav a').smoothScroll({
                 offset: -70
+            });
+
+            $('#password_popup').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
+            $('#register_popup').magnificPopup({
+                type: 'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             });
         });
     </script>
