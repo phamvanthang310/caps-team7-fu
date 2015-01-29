@@ -2,7 +2,7 @@
     ViewBag.Title = "Statistic";
     Layout = "~/Views/Shared/User/_UserLayout.cshtml";
 }
-@*<section id="content" class="table-layout">*@
+<section id="content" class="table-layout">
     <aside class="tray tray-left tray320 va-t pn" data-tray-height="match">
 
         <div class="animated-delay p20" data-animate='["100","fadeIn"]'>
@@ -23,17 +23,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#pchart5">
-                        <span class="fa fa-area-chart fa-lg"></span> Scoring Statistic
+                    <a href="#pchart7">
+                        <span class="fa fa-area-chart fa-lg"></span> Top Product Viewing
                     </a>
                 </li>
-                
-                <li>
-                    <a href="#pchart8">
-                        <span class="fa fa-bar-chart fa-lg"></span> Scoring Line
-                    </a>
-                </li>
-                
+                                
             </ul>
         </div>
     </aside>
@@ -54,36 +48,15 @@
         </div>
     </div>
     
-    <div class="row" id="pchart5">
-        <div class="col-md-5">
-            <div class="panel">
-                <div class="panel-heading">
-                    <span class="panel-title fw700 text-info"> Scoring Statistic</span>
-                </div>
-                <div class="panel-body pn">
-                    <div id="high-pie" style="width: 100%; height: 210px; margin: 0 auto"></div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="panel" id="pchart8">
+    <div class="panel" id="pchart7">
         <div class="panel-heading">
-            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Scoring Line</span>
-        </div>
-        <div class="panel-menu">
-            <div class="chart-legend" data-chart-id="#high-line3">
-                <a type="button" data-chart-id="0" class="legend-item btn btn-sm btn-warning mr10">Data 1</a>
-                <a type="button" data-chart-id="1" class="legend-item btn btn-primary btn-sm">Data 2</a>
-                <a type="button" data-chart-id="2" class="legend-item btn btn-info btn-sm">Data 3</a>
-                <a type="button" data-chart-id="3" class="legend-item btn btn-alert btn-sm">Data 4</a>
-                <a type="button" data-chart-id="4" class="legend-item btn btn-danger btn-sm">Data 5</a>
-            </div>
+            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Top Product Viewing</span>
         </div>
         <div class="panel-body pn">
-            <div id="high-line3" style="width: 100%; height: 210px; margin: 0 auto"></div>
+
+            <div id="high-column" style="width: 100%; height: 197px; margin: 0 auto"></div>
+
         </div>
     </div>
-
 </div>
+</section>
