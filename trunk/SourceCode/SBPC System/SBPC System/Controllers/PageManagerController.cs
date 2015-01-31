@@ -6,15 +6,11 @@ using System.Web.Mvc;
 
 namespace SBPC_System.Controllers
 {
-    public class BuilderPageController : Controller
+    public class PageManagerController : Controller
     {
         //
-        // GET: /BuilderPage/
+        // GET: /PageManager/
 
-        public ActionResult BuilderPage()
-        {
-            return View();
-        }
         public ActionResult PageManager()
         {
             return View();

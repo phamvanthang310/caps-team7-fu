@@ -5032,6 +5032,7 @@ table.heGalleryResults {
     bottom: 0;
     top: 0px;
     width: 267px;
+    right:0px;
     position: absolute;
 }
 
@@ -5587,7 +5588,7 @@ table.heGalleryResults {
 }
 
 .w-ui #pageManagerLayout #pt-smsquare-tall-header.pt-smsquare-selected div {
-    background: url('../sprites/editor/page-manager/layout-sc884a25914.png') 0 -190px;
+    background: url('~\Assets\img\layout-construction.png') 0 -190px;
 }
 
 .w-ui #pageManagerLayout #pt-smsquare-short-header div {

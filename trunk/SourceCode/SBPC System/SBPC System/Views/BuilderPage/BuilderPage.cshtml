@@ -2,125 +2,83 @@
     ViewBag.Title = "Builder";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-@*<style>
-        .builder-element-container {
-            background: none repeat scroll 0% 0% #F2F2F2;
-            border-left: 1px solid #DDD;
-            border-right: 0px none;
-            position: fixed;
-        }
+<style>
+    #demo-bar {
+        z-index: 1000;
+    }
 
-        .builder-element-pick {
-            padding: 11px 15px 11px 20px;
-            background: none repeat scroll 0% 0% #FBFBFB;
-            position: relative;
-        }
+    .jx-bar-rounded-tr {
+    }
 
-        .holder-style:hover {
-            background-color: white;
-            outline-color: #70CA63;
-        }
+    .jx-bar-rounded-tl {
+        border-top-left-radius: 5px;
+    }
 
-        .row {
-            margin: 0;
-        }
+    .jx-bar {
+        height: 30px;
+        padding: 0px;
+        width: 90%;
+        background-color: #E5E5E5;
+        border: 1px solid #B5B5B5;
+    }
 
-        .scroll {
-            overflow-y: scroll;
-            overflow-x: hidden;
-            height: 100%;
-        }
+    .jx-bar-button ul {
+        margin: 0px;
+        padding: 0px;
+    }
 
-        #demo-bar {
-            z-index: 1000;
-        }
+    ul, ol {
+        margin: 0px 0px 10px 30px;
+    }
 
-        .jx-bar-rounded-tr {
-        }
+    .jx-bar-button li {
+        font-family: Verdana,Arial,Helvetica,sans-serif;
+        font-size: 11px;
+        cursor: pointer;
+        padding: 4px 8px;
+        border: 1px solid #E5E5E5;
+        margin: 2px;
+    }
 
-        .jx-bar-rounded-tl {
-            border-top-left-radius: 5px;
-        }
+    .jx-bar-button li {
+        float: left;
+        list-style: outside none none;
+    }
 
-        .jx-bar {
-            height: 30px;
-            padding: 0px;
-            width: 50%;
-            background-color: #E5E5E5;
-            border: 1px solid #B5B5B5;
-        }
-
-        .jx-bar-button ul {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .jx-bar-button li {
+        .jx-bar-button li a:link, .jx-bar-button li a:visited {
             font-family: Verdana,Arial,Helvetica,sans-serif;
             font-size: 11px;
-            cursor: pointer;
-            padding: 4px 8px;
-            border: 1px solid #1DA5D2;
-            margin: 2px;
-        }
-
-        .jx-bar-button li {
-            float: left;
-            list-style: outside none none;
-        }
-
-            .jx-bar-button li a:link, .jx-bar-button li a:visited {
-                font-family: Verdana,Arial,Helvetica,sans-serif;
-                font-size: 11px;
-                color: #666;
-                text-decoration: none;
-                padding: 1px;
-            }
-
-        .multiple-choice-box-selected .multiple-choice-box-inner-left, .multiple-choice-box-selected:hover .multiple-choice-box-inner-left {
-            border-right: 1px solid #B0CEB7;
-        }
-
-        .multiple-choice-box-inner-left {
-            float: left;
-            width: 43px;
-            border-right: 1px solid #E1E1E1;
-            padding: 30px 0px;
-            text-align: center;
-        }
-
-        .multiple-choice-box {
-            position: relative;
-            border: 1px solid #E1E1E1;
-            border-radius: 3px;
-            background: none repeat scroll 0% 0% #F6F7F9;
-            margin: 10px 0px;
-            text-shadow: none;
-            cursor: pointer;
-        }
-
-        .multiple-choice-box-selected .multiple-choice-box-inner-right, .multiple-choice-box-selected:hover .multiple-choice-box-inner-right {
-            border-left: 1px solid #F7FCF8;
-        }
-
-        .multiple-choice-box-inner-right {
-            float: left;
-            border-left: 1px solid #FFF;
-            padding: 12px 20px 10px 13px;
-            width: 615px;
-        }
-
-        .multiple-choice-box-title {
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 7px;
-            color: #333;
-        }
-
-        .multiple-choice-box-body {
             color: #666;
+            text-decoration: none;
+            padding: 1px;
         }
-    </style>*@
+
+    .pt-smsquare div {
+        background: url("~/Assets/img/layout-construction.png") repeat scroll 0px -350px transparent;
+    }
+
+    #pt-smsquare-tall-header div {
+        background: url("../sprites/editor/page-manager/layout-sc884a25914.png") repeat scroll 0px 0px transparent;
+    }
+
+    .w-ui #pageManagerLayout .pt-smsquare div {
+        height: 95px;
+        width: 133px;
+    }
+
+    .pt-smsquare-tall-header1 div {
+        background-position: -18px -202px;
+    }
+
+    .pt-smsquare div {
+        position: relative;
+        top: 8px;
+        left: 8px;
+        width: 100px;
+        height: 101px;
+        background: url("/weebly/images/page_type_squares_small.gif") no-repeat scroll 0% 0% transparent;
+    }
+</style>
 <!-- Start: Topbar -->
 <header id="topbar" class="">
     <div class="topbar-left">
@@ -144,14 +102,6 @@
 <section id="content" class="table-layout">
     <div class="tray tray-center p30 va-t posr animated-long" data-animate="[" 800","fadein"]">
 
-        <div class="">
-            <h2 class="mt25 lh30 mtn text-center">
-
-                Container
-
-            </h2>
-        </div>
-
     </div>
     @Html.Partial("~/Views/Shared/BuilderPage/_RightMenu.cshtml")
 </section>
@@ -165,14 +115,20 @@
             </a>
         </li>
         <li style="border: 1px solid #1DA5D2;">
-            <a id="register_popup" href="#register-form-popup">
+            <a id="map_domain_popup" href="#map-domain-popup">
                 <span class="glyphicons glyphicons-show_thumbnails_with_lines fs20 holder-icon text-primary"></span>
                 <b>Map Website Domain</b>
             </a>
         </li>
+        <li style="border: 1px solid #1DA5D2;">
+            <a id="pages_popup" href="#pages-design-popup">
+                <span class="glyphicons glyphicons-show_thumbnails_with_lines fs20 holder-icon text-primary"></span>
+                <b>Page Design</b>
+            </a>
+        </li>
     </ul>
 </div>
-<div id="register-form-popup" class=" popup-basic admin-form mfp-with-anim mfp-hide" style="width: 610px; margin-left: auto; margin-right: auto;">
+<div id="map-domain-popup" class=" popup-basic admin-form mfp-with-anim mfp-hide" style="width: 610px; margin-left: auto; margin-right: auto;">
     <div class="admin-form tab-pane active" id="register1" role="tabpanel">
         <div class="panel panel-primary heading-border">
             <div class="panel-heading">
@@ -305,4 +261,184 @@
         </div>
         <!-- end .admin-form section -->
     </div>
+</div>
+
+<div id="pages-design-popup" class=" popup-basic admin-form mfp-with-anim mfp-hide" style="width: 80%; margin-left: auto; margin-right: auto; background-color:white;">
+    <section id="content" class="table-layout" style="height:800px;">
+        <aside class="tray tray-left tray320 va-t pn" data-tray-height="match" style="height: 2500px;">
+            <div class="ph15" 1200","fadeindown"]"="" data-animate="[">
+
+                <div class="row mb20" style="margin-top:30px; margin-left:10px;">
+                    <div class="col-xs-6 pr5">
+                        <a class="btn btn-block ph5 br0 animation-nav btn-default btn-primary" href="#form-tab3" data-toggle="tab">
+                            Add Page
+                        </a>
+
+                    </div>
+                    <div class="col-xs-6 pr5">
+                        <a class="btn btn-block ph5 br0 animation-nav btn-default btn-primary" href="#form-tab3" data-toggle="tab">
+                            Delete Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-spy">
+                <ul class="nav tray-nav tray-nav-border custom-nav-animation affix-top" data-offset-top="240" data-spy="affix">
+                    <li class="animated animated-short zoomIn active">
+                        <a href="#p0">
+
+                            <span class="fa fa-bar-chart fa-lg">
+                            </span>
+
+                            Home
+
+                        </a>
+
+                    </li>
+                    <li class="animated animated-short zoomIn">
+
+                        <a href="#p1">
+
+                            <span class="fa fa-eyedropper fa-lg">
+                            </span>
+
+                            About
+
+                        </a>
+
+                    </li>
+                    <li class="animated animated-short zoomIn">
+
+                        <a href="#p2">
+
+                            <span class="fa fa-compress fa-lg">
+                            </span>
+
+                            Contact
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+        <div id="feedback1" class="admin-form tab-pane active" role="tabpanel">
+            <div class="panel panel-info heading-border" style="height:800px;">
+                <div class=" panel-heading">
+                    <span class="panel-title">
+                        <i class="fa fa-rocket">
+                        </i>
+
+                        Choose Layout
+
+                    </span>
+                </div>
+                <!--
+
+                 end .form-header section
+
+                -->
+                <form id="form-feedback" action="http://admindesigns.com/" method="post">
+                    <div class="panel-body p25">
+                        <div class="section" style="width:150px;">
+                            <div id="pt-smsquare-tall-header" class="pt-smsquare pt-smsquare-tall-header1 pt-smsquare-selected">
+
+                                <div style="background: url('../Assets/img/layout-construction.png') repeat scroll 0px -350px transparent">
+                                </div>
+                                <br />
+                                <span>
+
+                                    Tall Header
+
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="section" style="width:150px;">
+                            <div id="pt-smsquare-short-header" class="pt-smsquare pt-smsquare-short-header1">
+
+                                <div style="background: url('../Assets/img/layout-construction.png') repeat scroll 0px -380px transparent">
+
+                                </div>
+                                <br />
+                                <span>
+
+                                    Short Header
+
+                                </span>
+
+                            </div>
+                        </div>
+                        <div class="section" style="width:150px;">
+                            <div id="pt-smsquare-landing" class="pt-smsquare pt-smsquare-landing1">
+                                <div style="background: url('../Assets/img/layout-construction.png') repeat scroll 0px -760px transparent">
+                                </div>
+                                <br />
+                                <span>
+
+                                    No Header
+
+                                </span>
+                            </div>
+                        </div>
+                        <div class="section" style="width:150px;">
+                            <div id="pt-smsquare-landing" class="pt-smsquare pt-smsquare-landing1">
+
+                                <div style="background: url('../Assets/img/layout-construction.png') repeat scroll 0px -95px transparent">
+                                </div>
+                                <br />
+                                <span>
+
+                                    Landing page
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body p20">
+                        <div class="col-md-12">
+
+                            <label class="field prepend-icon" for="pagename">
+                                <input id="pagename" class="gui-input" type="text" placeholder="Page Name" name="pagename"></input>
+                                <label class="field-icon" for="PageName">
+                                    <i class="fa fa-user">
+                                    </i>
+                                </label>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="panel-body p20">
+                        <div class="col-md-12">
+                            <label class="field prepend-icon" for="pagetitle">
+                                <input id="pagetitle" class="gui-input" type="text" placeholder="Page Title" name="pagetitle"></input>
+                                <label class="field-icon" for="PageTitle">
+                                    <i class="fa fa-user">
+                                    </i>
+                                </label>
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="panel-body p20">
+
+                        <label class="field prepend-icon" for="comment">
+                            <textarea id="comment" class="gui-textarea" placeholder="Desciption" name="comment"></textarea>
+                            <label class="field-icon" for="comment">
+                                <i class="fa fa-comments">
+                                </i>
+                            </label>
+                        </label>
+                    </div>
+                    <div class="panel-footer">
+                        <button class="button btn-primary" type="submit">
+
+                            Save and edit
+
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 </div>

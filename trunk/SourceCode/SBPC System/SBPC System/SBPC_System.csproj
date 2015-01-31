@@ -135,6 +135,7 @@
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PageManagerController.cs" />
     <Compile Include="Controllers\ProductManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -159,6 +160,8 @@
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\adminpanels.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\jquery.ui.touch-punch.min.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\json2.js" />
+    <Content Include="Assets\css\sites.css" />
+    <Content Include="Assets\css\editor-2.css" />
     <Content Include="Assets\css\main.css" />
     <Content Include="Assets\fonts\font-awesome\fontawesome-webfont78ce.svg" />
     <Content Include="Assets\fonts\glyphicons-pro\glyphicons-regular.svg" />
@@ -184,6 +187,7 @@
     <Content Include="Assets\img\flag_icons\flag-xs.png" />
     <Content Include="Assets\img\homepage\flat-design-examples-logo-13.png" />
     <Content Include="Assets\img\homepage\SushiChef-Bg.jpg" />
+    <Content Include="Assets\img\layout-construction.png" />
     <Content Include="Assets\img\logos\logo.png" />
     <Content Include="Assets\img\logos\logo_grey.png" />
     <Content Include="Assets\img\logos\logo_white.png" />
@@ -494,6 +498,7 @@
     <Content Include="Views\ProductManagement\AddProduct.cshtml" />
     <Content Include="Views\Shared\User\_UserLayout.cshtml" />
     <Content Include="Views\Shared\BuilderPage\_RightMenu.cshtml" />
+    <Content Include="Views\Shared\BuilderPage\_PageManager.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
