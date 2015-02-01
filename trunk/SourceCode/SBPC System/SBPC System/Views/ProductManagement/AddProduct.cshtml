@@ -1,4 +1,5 @@
-﻿@{
+﻿@model SBPC_System.Models.Product
+@{
     ViewBag.Title = "AddProduct";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -18,7 +19,10 @@
                         </span>
                     </div>
                     <div class="panel-body">
-                        <form class="form-horizontal" role="form">
+                        @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { id = "addProductForm" }))
+                        {
+                            ViewContext.FormContext.ValidationSummaryId = "valSumId";
+                            @Html.ValidationSummary(false, "Please fix these errors.", new Dictionary<string, object> { { "id", "valSumId" } });
                             <div class="form-group">
                                 <label class="col-lg-3 control-label" for="inputStandard">
 
@@ -26,17 +30,19 @@
 
                                 </label>
                                 <div class="col-lg-9">
-                                    <input id="inputStandard" class="form-control" type="text" placeholder="Type Here..."></input>
+                                    @Html.TextBox("Name", null, null, new { @class = "form-control", placeholder = "Type Here..." })
+                                    @Html.ValidationMessage("Name", "*")
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="col-lg-3 control-label" for="inputStandard">
 
-                                    Promotion Price
+                                    Available Quantity
 
                                 </label>
                                 <div class="col-lg-9">
-                                    <input id="inputStandard" class="form-control" type="text" placeholder="Type Here..."></input>
+                                    @Html.TextBox("AvailableQuantity", null, null, new { @class = "form-control", placeholder = "Type Here..." })
+                                    @Html.ValidationMessage("AvailableQuantity", "*")
                                 </div>
                             </div>
                             <div class="form-group">
@@ -92,7 +98,8 @@
 
                                 </label>
                                 <div class="col-lg-9">
-                                    <input id="inputStandard" class="form-control" type="text" placeholder="Type Here..."></input>
+                                    @Html.TextBox("Price", null, null, new { @class = "form-control", placeholder = "Type Here..." })
+                                    @Html.ValidationMessage("Price", "*")
                                 </div>
                             </div>
                             <div class="form-group">
@@ -102,7 +109,8 @@
 
                                 </label>
                                 <div class="col-lg-9">
-                                    <input id="inputStandard" class="form-control" type="text" placeholder="Type Here..."></input>
+                                    @Html.TextBox("PromotionPrice", null, null, new { @class = "form-control", placeholder = "Type Here..." })
+
                                 </div>
                             </div>
                             <div class="form-group">
@@ -115,18 +123,17 @@
                                     <textarea id="textArea2" class="form-control" rows="3"></textarea>
                                 </div>
                             </div>
-                            @{
-                                if (Request.QueryString["param"] == "Update")
-                                {
-                                    <input type="submit" value="Update" class="btn btn-primary">
-                                }
-                                else
-                                {
-                                    <input type="submit" value="Add" class="btn btn-primary">
-                                }
+
+                            if (Request.QueryString["param"] == "Update")
+                            {
+                                <input type="submit" value="Update" class="btn btn-primary">
+                            }
+                            else
+                            {
+                                <input type="submit" value="Add" class="btn btn-primary">
                             }
 
-                        </form>
+                        }
                     </div>
 
                 </div>
