@@ -1,8 +1,7 @@
 ﻿@{
     ViewBag.Title = "Statistic";
-    Layout = "~/Views/Shared/User/_UserLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <!-- Start: Topbar -->
 <header id="topbar" class="">
     <div class="topbar-left">
@@ -21,11 +20,41 @@
             <li class="crumb-trail">Profile</li>
         </ol>
     </div>
-</header>
-<!-- End: Topbar -->
-
+</header>    
 <section id="content" class="table-layout">
-    <aside class="tray tray-left tray320 va-t pn" data-tray-height="match">
+<div class="tray tray-center p40 va-t posr">
+   
+    <div class="panel" id="pchart8">
+        <div class="panel-heading">
+            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Page Viewing Statistic</span>
+        </div>
+        <div class="panel-menu">
+            <div class="chart-legend" data-chart-id="#high-line3">
+                @*<a type="button" data-chart-id="0" class="legend-item btn btn-sm btn-primary mr10">Data 1</a>
+                    <a type="button" data-chart-id="0" class="legend-item btn btn-info btn-sm">Data 2</a>*@
+            </div>
+        </div>
+        <div class="panel-body pn">
+            <div id="high-line3" style="width: 100%; height: 210px; margin: 0 auto"></div>
+        </div>
+    </div>
+
+    <div class="panel" id="pchart1">
+        <div class="panel-heading">
+            <span class="panel-icon">
+                <i class="fa fa-pencil"></i>
+            </span>
+            <span class="panel-title"> Top Products</span>
+        </div>
+        <div class="panel-body bg-light dark">
+
+            <div id="high-column2" style="width: 100%; height: 430px; margin: 0 auto"></div>
+
+        </div>
+    </div>
+        
+</div>
+    <aside class="tray tray-right tray320 va-t pn" data-tray-height="match">
 
         <div class="animated-delay p20" data-animate='["100","fadeIn"]'>
             <h1>Website Statistic</h1>
@@ -38,47 +67,20 @@
 
         <div id="nav-spy">
             <ul class="nav tray-nav" data-spy="affix" data-offset-top="200">
-                
+
                 <li class="active">
-                    <a href="#pchart1">
+                    <a href="#pchart8">
                         <span class="fa fa-area-chart fa-lg"></span> Page Viewing Statistic
                     </a>
                 </li>
                 <li>
-                    <a href="#pchart7">
-                        <span class="fa fa-area-chart fa-lg"></span> Top Product Viewing
+                    <a href="#pchart1">
+                        <span class="fa fa-area-chart fa-lg"></span> Top Products
                     </a>
                 </li>
-                                
+
             </ul>
         </div>
+
     </aside>
-
-<div class="tray tray-center p40 va-t posr">
-   
-    <div class="panel" id="pchart1">
-        <div class="panel-heading">
-            <span class="panel-icon">
-                <i class="fa fa-pencil"></i>
-            </span>
-            <span class="panel-title"> Pages Viewing Statistic</span>
-        </div>
-        <div class="panel-body bg-light dark">
-
-            <div id="high-column2" style="width: 100%; height: 430px; margin: 0 auto"></div>
-
-        </div>
-    </div>
-    
-    <div class="panel" id="pchart7">
-        <div class="panel-heading">
-            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Top Product Viewing</span>
-        </div>
-        <div class="panel-body pn">
-
-            <div id="high-column" style="width: 100%; height: 197px; margin: 0 auto"></div>
-
-        </div>
-    </div>
-</div>
 </section>
