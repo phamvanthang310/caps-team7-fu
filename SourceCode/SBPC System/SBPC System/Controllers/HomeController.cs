@@ -20,13 +20,13 @@ namespace SBPC_System.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string txtUsername, string txtPassword)
+        public ActionResult Login(string Username, string Password)
         {
-            if (txtUsername == "admin" && txtPassword == "admin")
+            if (Username == "admin" && Password == "admin")
             {
                 return RedirectToAction("Dashboard", "Dashboard", new { area = "Admin" });
             }
-            if (txtUsername == "user" && txtPassword == "user")
+            if (Username == "user" && Password == "user")
             {
                 return RedirectToAction("SiteManagement", "Profile", new { area = "User" });
             }

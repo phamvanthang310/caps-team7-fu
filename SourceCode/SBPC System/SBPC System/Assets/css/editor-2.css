@@ -1812,11 +1812,6 @@
     z-index: -1;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
 
 #scroll_container {
     position: absolute;
@@ -1886,16 +1881,16 @@ html, body {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
-.clearfix:before, .store-product-detail .product-variants .backgrid-paginator:before, .product-edit-options-dialog .product-options-list > li:before, .clearfix:after, .store-product-detail .product-variants .backgrid-paginator:after, .product-edit-options-dialog .product-options-list > li:after {
+.clearfix-editor:before, .store-product-detail .product-variants .backgrid-paginator:before, .product-edit-options-dialog .product-options-list > li:before, .clearfix-editor:after, .store-product-detail .product-variants .backgrid-paginator:after, .product-edit-options-dialog .product-options-list > li:after {
     content: " ";
     display: table;
 }
 
-.clearfix:after, .store-product-detail .product-variants .backgrid-paginator:after, .product-edit-options-dialog .product-options-list > li:after {
+.clearfix-editor:after, .store-product-detail .product-variants .backgrid-paginator:after, .product-edit-options-dialog .product-options-list > li:after {
     clear: both;
 }
 
-.clearfix, .store-product-detail .product-variants .backgrid-paginator, .product-edit-options-dialog .product-options-list > li {
+.clearfix-editor, .store-product-detail .product-variants .backgrid-paginator, .product-edit-options-dialog .product-options-list > li {
     *zoom: 1;
 }
 

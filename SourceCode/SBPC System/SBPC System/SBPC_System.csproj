@@ -154,6 +154,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\SBPCDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +176,7 @@
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\adminpanels.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\jquery.ui.touch-punch.min.js" />
     <Content Include="Assets\admin-tools\admin-plugins\admin-panels\json2.js" />
+    <Content Include="Assets\css\Site.css" />
     <Content Include="Assets\css\sites.css" />
     <Content Include="Assets\css\editor-2.css" />
     <Content Include="Assets\css\main.css" />
@@ -520,7 +523,6 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\User\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
