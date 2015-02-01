@@ -171,7 +171,7 @@ var demoHighCharts = function () {
                             type: 'column',
                             padding: 0,
                             margin: 0,
-                            marginTop: 10
+                            marginTop: 5
                         },
                         legend: {
                             enabled: false
@@ -202,7 +202,7 @@ var demoHighCharts = function () {
                         tooltip: {
                             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                                '<td style="padding:0"><b>{point.y:.1f} view</b></td></tr>',
                             footerFormat: '</table>',
                             shared: true,
                             useHTML: true
@@ -226,6 +226,18 @@ var demoHighCharts = function () {
                         }, {
                             name: 'Dribble',
                             data: [120]
+                        }, {
+                            name: 'Amazon',
+                            data: [50]
+                        }, {
+                            name: 'Bing',
+                            data: [70]
+                        }, {
+                            name: 'CNN',
+                            data: [100]
+                        }, {
+                            name: 'Delphi',
+                            data: [80]
                         }]
                     });
                  }
@@ -235,6 +247,7 @@ var demoHighCharts = function () {
                  if (column2.length) {
 
                     // Column Chart 2
+
                     $('#high-column2').highcharts({
                         credits: false,
                         colors: [bgPrimary, bgPrimary, bgWarning,
@@ -255,6 +268,10 @@ var demoHighCharts = function () {
                         xAxis: {
                             lineWidth: 0,
                             tickLength: 6,
+                            categories: ['Zenfone 6', 'Galaxy A3', 'HTC Butterfly', 'Oppo R1',
+                                'Oppo R5', 'Xperia Z Ultra', 'Lumia 1502', 'Lumia 930',
+                                'Galaxy S6', 'Iphone 6 plus'
+                            ],
                             title: {
                                 text: "abc"
                             },
@@ -269,7 +286,7 @@ var demoHighCharts = function () {
                             lineColor: '#EEE',
                             gridLineColor: '#EEE',
                             title: {
-                                text: "xyz"
+                                text: null
                             },
                             labels: {
                                 enabled: true,
@@ -293,11 +310,7 @@ var demoHighCharts = function () {
                         },
                         series: [{
                             name: 'View',
-                            data: [12, 14, 20,
-                                19, 8, 12,
-                                14, 20, 5,
-                                16, 8, 12,
-                             ]
+                            data: [3, 5, 8, 9, 12, 12, 14, 16, 19, 20]
                         }]
                     });
 
@@ -646,7 +659,7 @@ var demoHighCharts = function () {
                     // High Line 3
                     $('#high-line3').highcharts({
                         credits: false,
-                        colors: highColors,
+                        colors: sparkColors,
                         chart: {
                             backgroundColor: '#f9f9f9',
                             className: 'br-r',
@@ -689,24 +702,8 @@ var demoHighCharts = function () {
                             enabled: false,
                         },
                         series: [{
-                            name: "1 <i class='fa fa-star fs20 va-b'></i>",
+                            name: "View",
                             data: [7.0, 6, 9, 14, 18, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-                        }, {
-                            name: "2 <i class='fa fa-star fs20 va-b'></i>",
-                            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-                        }, {
-                            name: "3 <i class='fa fa-star fs20 va-b'></i>",
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-                        }, {
-                            name: "4 <i class='fa fa-star fs20 va-b'></i>",
-                            data: [3, 1, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-                        }, {
-                            name: "5 <i class='fa fa-star fs20 va-b'></i>",
-                            data: [7.0, 6, 9, 14, 3, 1, 3.5, 8.4, 20.1, 14.1, 8.6, 2.5]
-                        }, {
-                            visible: false,
-                            name: 'CNN',
-                            data: [1, 5, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
                         }]
                     });
 

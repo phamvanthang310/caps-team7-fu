@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "Profile";
-    Layout = "~/Views/Shared/User/_UserLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 
@@ -25,7 +25,6 @@
     </div>
 </header>
 <!-- End: Topbar -->
-
 <div id="content">
     <div class="col-md-8">
         <div class="panel">
@@ -65,8 +64,8 @@
                         </div>
                     </div>
                     <div class="panel-footer">
-                        <button class="button btn-lg btn-primary btn-block" type="submit">Save</button>
-                        <a id="password_popup" class="button btn-lg btn-primary btn-block text-center" href="#modal-form">Change Password</a>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+                        <a id="password_popup" class="btn btn-primary dark btn-lg btn-block" href="#modal-form">Change Password</a>
                     </div>
                 </form>
             </div>
@@ -76,10 +75,10 @@
     
     
     <div class="col-md-4">
-        <div class="btn btn-alert btn-gradient dark btn-block">
-            <span class="glyphicon glyphicon-star text-warning-lighter fs30"></span><h5>Premium User</h5>
+        <div class="alert alert-alert alert-dismissable text-center">
+            <i class="glyphicon glyphicon-star text-warning-lighter fs20 text-center"></i><strong>Premium User</strong>
         </div>
-        <h3><a href="">Do you want to Upgrade ?</a></h3>
+        <h3><a class="btn btn-info dark btn-lg btn-block" href="">Go Premium Now!!</a></h3>
     </div>
 
 </div>

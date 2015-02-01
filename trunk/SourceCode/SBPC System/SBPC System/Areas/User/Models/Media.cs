@@ -17,8 +17,8 @@ namespace SBPC_System.Models
         public int? ProductId { get; set; }
         public Product Product { get; set; }
         [ForeignKey("Category")]
-        [Display(Name="Category")]
-        public int? CategoryId { get;set }
+        [Display(Name = "Category")]
+        public int? CategoryId { get; set; }
         public Category Category{get;set;}
     }
 }

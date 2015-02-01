@@ -131,7 +131,21 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TemplateController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\User\Controllers\ProfileController.cs" />
+    <Compile Include="Areas\User\Models\AccountType.cs" />
+    <Compile Include="Areas\User\Models\Category.cs" />
+    <Compile Include="Areas\User\Models\Column.cs" />
+    <Compile Include="Areas\User\Models\Layout.cs" />
+    <Compile Include="Areas\User\Models\Media.cs" />
+    <Compile Include="Areas\User\Models\Page.cs" />
+    <Compile Include="Areas\User\Models\Product.cs" />
+    <Compile Include="Areas\User\Models\Theme.cs" />
+    <Compile Include="Areas\User\Models\User.cs" />
+    <Compile Include="Areas\User\Models\Website.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -503,10 +517,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Areas\User\Models\" />
     <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
