@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "SiteManagement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Start: Topbar -->
+<header id="topbar" class="">
+    <div class="topbar-left">
+        <ol class="breadcrumb">
+            <li class="crumb-active">
+                <a href="dashboard.html">Your Sites</a>
+            </li>
+            <li class="crumb-icon">
+                <a href="dashboard.html">
+                    <span class="glyphicon glyphicon-home"></span>
+                </a>
+            </li>
+            <li class="crumb-link">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="crumb-trail">Your Sites</li>
+        </ol>
+    </div>
+</header>
+<!-- End: Topbar -->
+<section id="content" class="table-layout">
+    <div class="col-md-12">
+        <div class="panel" id="spy3">
+            <div class="panel-heading">
+                <span class="panel-title">
+                    <span class="glyphicons glyphicons-table"></span>Sites List
+                </span>
+                <div class="pull-right">
+                    <button class="btn btn-sm btn-primary">Add Site</button>
+                </div>
+            </div>
+            <div class="panel-body pn">
+                <table class="table table-hover table-responsive ">
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>URL</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td class="text-left w40">
+                            <span class="label label-success ml5">Published</span>
+
+                        </td>
+                        <td class="fs18">Forum Site</td>
+                        <td><a href="#">forum.rocketsite.com</a></td>
+                        <td class="text-right">
+                            <a class="btn btn-sm btn-system" href="~/builderpage/builderpage"><span class="glyphicons glyphicons-edit mr10"></span>Edit</a>
+                            <a class="btn btn-sm btn-alert ml10"><span class="glyphicons glyphicons-charts mr10"></span>Stat</a>
+                            <div class="btn-group ml10">
+                                <button type="button" class="btn btn-info btn-sm fs12 fw500 dropdown-toggle ph10" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-globe mr10"></span>Map Domain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-lock mr10"></span>Deactive Site</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-remove  mr10"></span>Delete Site
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left w40">
+                            <span class="label label-success ml5">Published</span>
+                        </td>
+                        <td class="fs18">Ecommerce Site</td>
+                        <td><a href="#">ecommerce.rocketsite.com</a></td>
+                        <td class="text-right">
+                            <a class="btn btn-sm btn-system"><span class="glyphicons glyphicons-edit mr10"></span>Edit</a>
+                            <a class="btn btn-sm btn-alert ml10"><span class="glyphicons glyphicons-charts mr10"></span>Stat</a>
+                            <div class="btn-group ml10">
+                                <button type="button" class="btn btn-info btn-sm fs12 fw500 dropdown-toggle ph10" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-globe mr10"></span>Map Domain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-lock mr10"></span>Deactive Site</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-remove  mr10"></span>Delete Site
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left w40">
+                            <span class="label label-info ml5">Not Published</span>
+                        </td>
+                        <td class="fs18">Catalogue Site</td>
+                        <td>--</td>
+                        <td class="text-right">
+                            <a class="btn btn-sm btn-system"><span class="glyphicons glyphicons-edit mr10"></span>Edit</a>
+                            <a class="btn btn-sm btn-alert ml10"><span class="glyphicons glyphicons-charts mr10"></span>Stat</a>
+                            <div class="btn-group ml10">
+                                <button type="button" class="btn btn-info btn-sm fs12 fw500 dropdown-toggle ph10" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-globe mr10"></span>Map Domain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-lock mr10"></span>Deactive Site</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-remove  mr10"></span>Delete Site
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-left w40">
+                            <span class="label label-info ml5">Not Published</span>
+                        </td>
+                        <td class="fs18">CMS Site</td>
+                        <td>--</td>
+                        <td class="text-right">
+                            <a class="btn btn-sm btn-system"><span class="glyphicons glyphicons-edit mr10"></span>Edit</a>
+                            <a class="btn btn-sm btn-alert ml10"><span class="glyphicons glyphicons-charts mr10"></span>Stat</a>
+                            <div class="btn-group ml10">
+                                <button type="button" class="btn btn-info btn-sm fs12 fw500 dropdown-toggle ph10" data-toggle="dropdown">
+                                    More
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu pull-right" role="menu">
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-globe mr10"></span>Map Domain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span class="glyphicons glyphicons-lock mr10"></span>Deactive Site</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="glyphicon glyphicon-remove  mr10"></span>Delete Site
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>

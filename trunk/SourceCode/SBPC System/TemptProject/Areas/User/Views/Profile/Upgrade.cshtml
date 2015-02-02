@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = "Upgrade";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #bronze {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 0;
+    }
+
+    #silver {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 102;
+    }
+
+    #gold {
+        width: 126px;
+        height: 102px;
+        background: url(/Assets/img/sprites/2e2kxu0.jpg) 0 204;
+    }
+</style>
+
+<div class="col-sm-12 col-md-11 center-column mt25">
+    <div class="pricing-table mt25">
+        <div class="col-sm-4">
+            <div class="pricing-plan pricing-compare">
+                <div class="plan-desc">
+                    <h1 class="mtn">Features</h1>
+
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> Disk Space</li>
+                        <li><i class="fa fa-refresh"></i>Website</li>
+                        <li>
+                            <i class="fa fa-globe"></i> <b>Allow Mapping Domain</b>
+                        </li>
+                        <li>
+                            <i class="fa fa-bar-chart-o"></i> <b>Site Statistic</b>
+                        </li>
+                        <li>
+                            <span class="glyphicons glyphicons-headset"></span> <b>Support</b>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan-footer hidden">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="pricing-plan plan-info">
+                <div class="plan-header">
+                    <h1 class="mtn">Free User</h1>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>0</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>10GB</b></li>
+                        <li><i class="fa fa-refresh"></i> <b>5</b> Sites</li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                @*<div class="plan-footer">
+                    <a class="btn btn-dark" href="#">Select</a>
+                </div>*@
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="pricing-plan plan-info">
+                <div class="plan-header">
+                    <h2 class="mtn">Bronze</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>2</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>20GB</b></li>
+                        <li><i class="fa fa-refresh"></i> <b>10</b> Sites</li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan-footer">
+                    <a class="btn btn-dark" id="bronze_checkout" href="#checkout-form">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="pricing-plan plan-warning">
+                <div class="plan-header">
+                    <h2 class="mtn">Silver</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>5</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>40GB</b></li>
+                        <li><i class="fa fa-refresh"></i> <b>15</b> Sites</li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-times"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan-footer">
+                    <a class="btn btn-dark" id="silver_checkout" href="#checkout-form">Select</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="pricing-plan plan-primary">
+                <div class="plan-header">
+                    <h2 class="mtn">Gold</h2>
+                </div>
+                <div class="plan-pricing">
+                    <span>$</span>
+                    <h2>8</h2>
+                    <h6>Per Month</h6>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fa fa-hdd-o"></i> <b>80GB</b></li>
+                        <li><i class="fa fa-refresh"></i> <b>Unlimit</b> Sites</li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-check-circle"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-ellipsis-h"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="plan-footer">
+                    <a id="gold_checkout" class="btn btn-dark" href="#checkout-form">Select</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="checkout-form" class=" popup-basic admin-form mfp-with-anim mfp-hide">
+    <div class="admin-form tab-pane active" id="login2" role="tabpanel">
+        <div class="panel panel-primary heading-border">
+            <div class="panel-heading">
+                <span class="panel-title">Checkout</span>
+            </div>
+            <!-- end .form-header section -->
+            <div class="panel-body p25 pt10">
+                <div class="section row">
+                    <div class="col-md-6 pr30 border-right">
+                        <div class="section-divider mv40">
+                            <span>Upgrade to</span>
+                        </div>
+                        <!-- .tagline -->
+                        <div class="section">
+                            <div class="plan-header">
+                                <h2 class="mtn text-center" id="membership">Gold User</h2>
+                            </div>
+                            <div class="bg-light dark fw700 text-center">
+                                <h1 id="price">$0</h1><h6>Per Month</h6>
+                            </div>
+                        </div>
+                        <!-- end section -->
+                    </div>
+                    <!-- end .colm section -->
+                    <div class="col-md-6 pl30">
+                        <div class="section-divider mv40">
+                            <span>Payment</span>
+                        </div>
+                        <!-- .tagline -->
+                        <div class="section">
+                            <button class="zocial paypal">Pay with Paypal</button>
+                        </div>
+                        <!-- end section -->
+                        
+                    </div>
+                    <!-- end .colm section -->
+                </div>
+                <!-- end .section row section -->
+            </div>
+        </div>
+    </div>
+</div>
