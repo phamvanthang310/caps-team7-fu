@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Statistic";
+    Layout = "~/Views/Shared/User/_UserLayout.cshtml";
+}
+<section id="content" class="table-layout">
+    
+
+<div class="tray tray-center p40 va-t posr">
+   
+    <div class="panel" id="pchart8">
+        <div class="panel-heading">
+            <span class="panel-title text-info fw700"><i class="fa fa-pencil hidden"></i> Page Viewing Statistic</span>
+        </div>
+        <div class="panel-menu">
+            <div class="chart-legend" data-chart-id="#high-line3">
+                @*<a type="button" data-chart-id="0" class="legend-item btn btn-sm btn-primary mr10">Data 1</a>
+                    <a type="button" data-chart-id="0" class="legend-item btn btn-info btn-sm">Data 2</a>*@
+            </div>
+        </div>
+        <div class="panel-body pn">
+            <div id="high-line3" style="width: 100%; height: 210px; margin: 0 auto"></div>
+        </div>
+    </div>
+
+    <div class="panel" id="pchart1">
+        <div class="panel-heading">
+            <span class="panel-icon">
+                <i class="fa fa-pencil"></i>
+            </span>
+            <span class="panel-title"> Top Products</span>
+        </div>
+        <div class="panel-body bg-light dark">
+
+            <div id="high-column2" style="width: 100%; height: 430px; margin: 0 auto"></div>
+
+        </div>
+    </div>
+        
+</div>
+    <aside class="tray tray-right tray320 va-t pn" data-tray-height="match">
+
+        <div class="animated-delay p20" data-animate='["100","fadeIn"]'>
+            <h1>Website Statistic</h1>
+
+        </div>
+
+        <div class="animated-delay ph20 pb20 ptn hidden" data-animate='["300","fadeIn"]'>
+            <img class="img-responsive w200" src="assets/img/external/highcharts_logo.html" title="logo">
+        </div>
+
+        <div id="nav-spy">
+            <ul class="nav tray-nav" data-spy="affix" data-offset-top="200">
+
+                <li class="active">
+                    <a href="#pchart8">
+                        <span class="fa fa-area-chart fa-lg"></span> Page Viewing Statistic
+                    </a>
+                </li>
+                <li>
+                    <a href="#pchart1">
+                        <span class="fa fa-area-chart fa-lg"></span> Top Products
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </aside>
+</section>
