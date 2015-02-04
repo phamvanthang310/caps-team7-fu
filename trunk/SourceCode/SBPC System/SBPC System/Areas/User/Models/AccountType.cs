@@ -14,6 +14,6 @@ namespace SBPC_System.Models
         public int ProductLimit { get; set; }
         public int SiteLimit { get; set; }
         public string Function { get; set; }
-        public IList<User> Users { get; set; }
+        public IList<Account> Users { get; set; }
     }
 }
