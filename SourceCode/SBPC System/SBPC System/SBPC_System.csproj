@@ -144,11 +144,11 @@
     <Compile Include="Areas\User\Models\Page.cs" />
     <Compile Include="Areas\User\Models\Product.cs" />
     <Compile Include="Areas\User\Models\Theme.cs" />
-    <Compile Include="Areas\User\Models\Account.cs" />
     <Compile Include="Areas\User\Models\Website.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
     <Compile Include="Controllers\AllTemplatesController.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
+    <Compile Include="Controllers\CategoryManagementController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MapDomainController.cs" />
     <Compile Include="Controllers\PageManagerController.cs" />
@@ -156,8 +156,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\SBPCDbContext.cs" />
-    <Compile Include="Models\SendMailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -346,6 +346,8 @@
     <Content Include="Areas\Admin\Views\Account\Account.cshtml" />
     <Content Include="Areas\Admin\Views\Template\Template.cshtml" />
     <Content Include="Areas\Admin\Views\User\User.cshtml" />
+    <Content Include="Views\CategoryManagement\CategoryManagement.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -518,12 +520,12 @@
     <Content Include="Views\Shared\User\_UserLayout.cshtml" />
     <Content Include="Views\Shared\BuilderPage\_RightMenu.cshtml" />
     <Content Include="Views\AllTemplates\AllTemplates.cshtml" />
+    <Content Include="Views\CategoryManagement\AddCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Content\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\User\Views\Shared\" />
     <Folder Include="Views\MapDomain\" />
   </ItemGroup>
