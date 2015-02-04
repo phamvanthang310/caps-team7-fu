@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SBPC_System.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace SBPC_System.Controllers
 {
@@ -15,22 +17,43 @@ namespace SBPC_System.Controllers
         {
             return View();
         }
+
         public ActionResult Login()
         {
             return View();
         }
+
         [HttpPost]
-        public ActionResult Login(string Username, string Password)
+        public ActionResult Index(Account account)
         {
-            if (Username == "admin" && Password == "admin")
+            // Get value of checkbox.
+            string chkRememberMe = Request.Form["chkRememberMe"];
+            bool isRemember = chkRememberMe != null ? true : false;
+
+
+            // Query user
+            SBPCDbContext dbContext = new SBPCDbContext();
+            Account user = (Account)dbContext.Accounts.Select(x => x.Email == account.Email && x.Password == account.Password);
+            if (user != null)
             {
-                return RedirectToAction("Dashboard", "Dashboard", new { area = "Admin" });
+                // Remember user email if checkbox is checked.
+                FormsAuthentication.SetAuthCookie(account.Email, isRemember);
+
+                // Redirect.
+                if (user.Role.Equals("Admin"))
+                {
+                    return RedirectToAction("Dashboard", "Dashboard", new { area = "Admin" });
+                }
+                else
+                {
+                    return RedirectToAction("SiteManagement", "Profile", new { area = "User" });
+                }
             }
-            if (Username == "user" && Password == "user")
+            else
             {
-                return RedirectToAction("SiteManagement", "Profile", new { area = "User" });
+                ViewBag.Msg = "Invalid User";
+                return View();
             }
-            return Redirect("Index");
         }
     }
 }

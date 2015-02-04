@@ -64,8 +64,8 @@
             <!-- end .form-header section -->
             @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { id = "loginForm" }))
             {
-                ViewContext.FormContext.ValidationSummaryId = "valSumId";
-                @Html.ValidationSummary(false, "Please fix these errors.", new Dictionary<string, object> { { "id", "valSumId" } });
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true)
                 <div class="panel-body ">
                     <div class="section row">
                         <div class="col-md-12 ">
@@ -75,26 +75,26 @@
                             <!-- .tagline -->
                             <div class="section">
                                 <label for="username" class="field prepend-icon">
-                                    @Html.TextBox("Username", null, null, new { @class = "gui-input", placeholder = "Enter username" })
+                                    @Html.TextBoxFor(m => m.Email, new { @class = "gui-input", placeholder = "Enter email" })
                                     <label for="username" class="field-icon">
                                         <i class="fa fa-user"></i>
                                     </label>
-                                    @Html.ValidationMessage("Username", "*")
+                                    @Html.ValidationMessageFor(m => m.Email)
                                 </label>
                             </div>
                             <!-- end section -->
                             <div class="section">
                                 <label for="password" class="field prepend-icon">
-                                    @Html.Password("Password", null, new { @class = "gui-input", placeholder = "Enter password" })
+                                    @Html.PasswordFor(m => m.Password, new { @class = "gui-input", placeholder = "Enter password" })
                                     <label for="password" class="field-icon">
                                         <i class="fa fa-lock"></i>
                                     </label>
-                                    @Html.ValidationMessage("Password", "*")
+                                    @Html.ValidationMessageFor(m => m.Password)
                                 </label>
                             </div>
                             <!-- end section -->
                             <label class="block mt15 option option-primary">
-                                <input name="checked" type="checkbox">
+                                <input name="chkRememberMe" type="checkbox">
                                 <span class="checkbox"></span>Remember me
                             </label>
                             <!-- end section -->

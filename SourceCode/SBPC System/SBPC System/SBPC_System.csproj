@@ -144,18 +144,20 @@
     <Compile Include="Areas\User\Models\Page.cs" />
     <Compile Include="Areas\User\Models\Product.cs" />
     <Compile Include="Areas\User\Models\Theme.cs" />
-    <Compile Include="Areas\User\Models\User.cs" />
+    <Compile Include="Areas\User\Models\Account.cs" />
     <Compile Include="Areas\User\Models\Website.cs" />
     <Compile Include="Areas\User\UserAreaRegistration.cs" />
+    <Compile Include="Controllers\AllTemplatesController.cs" />
     <Compile Include="Controllers\BuilderPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MapDomainController.cs" />
     <Compile Include="Controllers\PageManagerController.cs" />
     <Compile Include="Controllers\ProductManagementController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\SBPCDbContext.cs" />
+    <Compile Include="Models\SendMailModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -515,7 +517,7 @@
     <Content Include="Views\ProductManagement\AddProduct.cshtml" />
     <Content Include="Views\Shared\User\_UserLayout.cshtml" />
     <Content Include="Views\Shared\BuilderPage\_RightMenu.cshtml" />
-    <Content Include="Views\Shared\BuilderPage\_PageManager.cshtml" />
+    <Content Include="Views\AllTemplates\AllTemplates.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -523,6 +525,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\User\Views\Shared\" />
+    <Folder Include="Views\MapDomain\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

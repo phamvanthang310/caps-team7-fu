@@ -36,7 +36,6 @@ namespace SBPC_System.Controllers
             User user = context.CheckLogin(txtEmail, txtPassword);
             if (user != null)
             {
-
                 // Remember user email if checkbox is checked.
                 // Save user's fullname and role to session.
                 FormsAuthentication.SetAuthCookie(txtEmail, remember);
@@ -54,7 +53,6 @@ namespace SBPC_System.Controllers
                 }
             }
             return Redirect("Index");
-
         }
     }
 }

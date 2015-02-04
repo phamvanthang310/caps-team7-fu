@@ -70,7 +70,6 @@ namespace TemptProject.Models
                         // Send.
                         client.Send(mailMessage);
                     }
-                    
                 }
             }
         }

@@ -10,7 +10,7 @@ namespace SBPC_System.Models
     {
         //Account
         public DbSet<AccountType> AccountTypes { get; set; }
-        public DbSet<Account> Users { get; set; }
+        public DbSet<Account> Accounts { get; set; }
         //Template
         public DbSet<Column> Columns { get; set; }
         public DbSet<Layout> Layouts { get; set; }
