@@ -23,7 +23,7 @@ namespace SBPC_System.Models
         [ForeignKey("User")]
         [Display(Name="User Email")]
         public string Email { get; set; }
-        public User User { get; set; }
+        public Account User { get; set; }
         [ForeignKey("Theme")]
         [Display(Name="Theme")]
         public int? ThemeId { get; set; }
