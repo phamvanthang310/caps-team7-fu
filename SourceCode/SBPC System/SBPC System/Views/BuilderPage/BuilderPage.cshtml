@@ -78,6 +78,151 @@
         height: 101px;
         background: url("/weebly/images/page_type_squares_small.gif") no-repeat scroll 0% 0% transparent;
     }
+
+    .navigation {
+        background: none repeat scroll 0% 0% #CBB88E;
+        min-height: 80px;
+    }
+
+    .navigation-detail {
+        margin: 0px auto;
+        width: 960px;
+    }
+
+    #header {
+        border-collapse: collapse;
+        border-spacing: 0px;
+        width: 100%;
+        height: 80px;
+    }
+
+        #header td {
+            vertical-align: middle;
+            text-align: left;
+        }
+
+    #logo {
+        font-size: 36px;
+        line-height: 1;
+        color: #FFF;
+        text-transform: uppercase;
+        text-decoration: none;
+        max-width: 400px;
+    }
+
+    #nav {
+        min-width: 550px;
+        max-width: 760px;
+    }
+
+    .wsite-logo {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .wsite-title-placeholder {
+        width: 10px;
+        overflow: hidden;
+        padding: 0px !important;
+        margin-left: -10px !important;
+    }
+
+    .wsite-logo img, .wsite-logo span {
+        vertical-align: top !important;
+    }
+
+    .wsite-title-placeholder {
+        padding-right: 60px !important;
+        cursor: default;
+    }
+
+    #nav ul {
+        list-style: outside none none;
+        float: left;
+        margin: 0px;
+        padding: 0px;
+    }
+
+        #nav ul li {
+            list-style: outside none none;
+            float: left;
+            padding: 10px 10px 10px 15px;
+        }
+
+            #nav ul li a {
+                display: block;
+                font-weight: bold;
+                color: #4A4A4A;
+                text-decoration: none;
+                padding: 5px 0px;
+                border: 0px none;
+                outline: 0px none;
+                list-style-type: none;
+                font-size: 14px;
+                line-height: 1;
+                text-transform: uppercase;
+            }
+
+                #nav ul li#active a, #nav ul li a:hover {
+                    color: #FFF;
+                }
+
+    .container {
+        min-height: 400px;
+        padding: 55px 0px;
+        margin: 0px auto;
+        width: 960px;
+    }
+
+    #secondlistParent {
+        position: relative;
+    }
+
+    .wsite-not-footer {
+        text-align: left;
+    }
+
+    ul.weebly-content-area {
+        position: relative !important;
+        padding: 10px 0px !important;
+        margin: -10px 0px !important;
+        width: 100% !important;
+    }
+
+    .wsite-not-footer {
+        text-align: left;
+    }
+
+    #empty-message {
+        position: relative;
+    }
+
+    .empty-element-message {
+        color: #CED0D2 !important;
+        cursor: default;
+        font-family: "Open Sans",Helvetica,Arial,Verdana,sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        -moz-user-select: none;
+    }
+
+    #empty-message-inner {
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        color: #CED0D2 !important;
+        padding: 100px 0px 110px;
+        background-image: url("../Assets/img/drag-instructions.png");
+    }
+
+    #empty-message-inner {
+        padding: 100px 0px;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: #AAA;
+    }
 </style>
 <!-- Start: Topbar -->
 <header id="topbar" class="">
@@ -100,8 +245,92 @@
 </header>
 <!-- End: Topbar -->
 <section id="content" class="table-layout">
-    <div class="tray tray-center p30 va-t posr animated-long" data-animate="[" 800","fadein"]">
+    <div class="tray tray-center p30 va-t posr animated-long">
+        <div id="view-container" style="width:100%;margin-left:-233px;">
+            <div class="container-header-all">
+                <div class="navigation">
+                    <div class="navigation-detail">
+                        <table id="header">
+                            <tbody>
 
+                                <tr>
+                                    <td id="logo">
+                                        <span style="display:inline-block;">
+                                            <span class="wsite-logo">
+                                                <span class="wsite-title-placeholder">
+
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </td>
+                                    <td id="nav">
+                                        <ul class="wsite-menu-default">
+
+                                            <li id="active" class="w-menu-item wsite-nav-0" style="position: relative;">
+                                                <a href="#" style="position: relative;">
+
+                                                    Store
+
+                                                </a>
+                                            </li>
+                                            <li class="w-menu-item wsite-nav-0" style="position: relative;">
+                                                <a href="#" style="position: relative;">
+
+                                                    About
+
+                                                </a>
+                                            </li>
+                                            <li class="w-menu-item wsite-nav-0" style="position: relative;">
+                                                <a href="#" style="position: relative;">
+
+                                                    Contact
+
+                                                </a>
+                                            </li>
+                                            <li class="w-menu-item wsite-nav-0" style="position: relative;">
+                                                <a href="#" style="position: relative;">
+
+                                                    Product
+
+                                                </a>
+                                            </li>
+
+                                        </ul>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div style='background: url("../Assets/img/header-builder/Beach-Swing.jpg"); height: 230px; width: 100%; position: relative; '>
+                </div>
+            </div>
+            <div id="main-wrap" style="width:100%;">
+
+                <div class="container">
+                    <div id="secondlistParent" class="weebly-area wsite-elements wsite-not-footer">
+                        <ul id="secondlist" class="weebly-content-area weebly-area-active">
+                            <div id="empty-message" class="empty-element-message">
+
+                                <div id="empty-message-inner">
+
+                                    Drag Elements Here
+
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+
+                 end container
+
+                -->
+
+            </div>
+            <!-- end main-wrap-->
+        </div>
     </div>
     @Html.Partial("~/Views/Shared/BuilderPage/_RightMenu.cshtml")
 </section>
